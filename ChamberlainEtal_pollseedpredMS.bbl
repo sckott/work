@@ -1,0 +1,134 @@
+\begin{thebibliography}{19}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Burke \emph{et~al.}(2002)Burke, Gardner \& Rieseberg}]{Burke2002}
+Burke, J.~M., Gardner, K.~A. \& Rieseberg, L.~H. (2002).
+\newblock {The potential for gene flow between cultivated and wild sunflower
+  (Helianthus annuus) in the United States}.
+\newblock \emph{American journal of botany}, 89, 1550--1552.
+
+\bibitem[{Cariveau \emph{et~al.}(2004)Cariveau, Irwin, Brody, Garcia-mayeya,
+  Ohe \& Ohe}]{Cariveau2004}
+Cariveau, D., Irwin, R.~E., Brody, A.~K., Garcia-mayeya, L.~S., Ohe, A. V.~D.
+  \& Ohe, V.~D. (2004).
+\newblock {Direct and indirect effects of pollinators and seed predators to
+  selection on plant and floral traits}.
+\newblock \emph{Oikos}, 1, 15--26.
+
+\bibitem[{Chao(1984)}]{Chao1984}
+Chao, A. (1984).
+\newblock {Non-parametric estimation of the number of classes in a population}.
+\newblock \emph{Scandinavian Journal of Statistics}, 11, 265--270.
+
+\bibitem[{Dormann \emph{et~al.}(2007)Dormann, Schweiger, Augenstein, Bailey,
+  Billeter, de~Blust, DeFilippi, Frenzel, Hendrickx \& Herzog}]{Dormann2007}
+Dormann, C.~F., Schweiger, O., Augenstein, I., Bailey, D., Billeter, R.,
+  de~Blust, G., DeFilippi, R., Frenzel, M., Hendrickx, F. \& Herzog, F. (2007).
+\newblock {Effects of landscape structure and land-use intensity on similarity
+  of plant and animal communities}.
+\newblock \emph{Global Ecology and Biogeography}, 16, 774--787.
+
+\bibitem[{Foley \emph{et~al.}(2005)Foley, Defries, Asner, Barford, Bonan,
+  Carpenter, Chapin, Coe, Daily, Gibbs, Helkowski, Holloway, Howard, Kucharik,
+  Monfreda, Patz, Prentice, Ramankutty \& Snyder}]{Foley2005}
+Foley, J.~a., Defries, R., Asner, G.~P., Barford, C., Bonan, G., Carpenter,
+  S.~R., Chapin, F.~S., Coe, M.~T., Daily, G.~C., Gibbs, H.~K., Helkowski,
+  J.~H., Holloway, T., Howard, E.~a., Kucharik, C.~J., Monfreda, C., Patz,
+  J.~a., Prentice, I.~C., Ramankutty, N. \& Snyder, P.~K. (2005).
+\newblock {Global consequences of land use.}
+\newblock \emph{Science (New York, N.Y.)}, 309, 570--4.
+
+\bibitem[{Greenleaf \& Kremen(2006)}]{Greenleaf2006}
+Greenleaf, S.~S. \& Kremen, C. (2006).
+\newblock {Wild bees enhance honey bees' pollination of hybrid sunflower}.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 103, 13890--13895.
+
+\bibitem[{Irwin \emph{et~al.}(2003)Irwin, Strauss, Storz, Emerson \&
+  Guibert}]{Irwin2003}
+Irwin, R.~E., Strauss, S.~Y., Storz, S., Emerson, A. \& Guibert, G. (2003).
+\newblock {The role of herbivores in the maintenance of a flower color
+  polymorphism in wild radish}.
+\newblock \emph{Ecology}, 84, 1733--1743.
+
+\bibitem[{Linder \emph{et~al.}(1998)Linder, Taha, Seiler, Snow \&
+  Rieseberg}]{Linder1998}
+Linder, C.~R., Taha, I., Seiler, G.~J., Snow, A.~A. \& Rieseberg, L.~H. (1998).
+\newblock {Long-term introgression of crop genes into wild sunflower
+  populations}.
+\newblock \emph{Theoretical and Applied Genetics}, 96, 339--347.
+
+\bibitem[{McKinney(2006)}]{McKinney2006}
+McKinney, M.~L. (2006).
+\newblock {Urbanization as a major cause of biotic homogenization}.
+\newblock \emph{Biological Conservation}, 127, 247--260.
+
+\bibitem[{Michener(2000)}]{Michener2000}
+Michener, C.~D. (2000).
+\newblock \emph{{The bees of the world}}.
+\newblock Johns Hopkins Univ Pr, Baltimore, Maryland.
+
+\bibitem[{Oksanen \emph{et~al.}(2010)Oksanen, Blanchet, Kindt, Legendre,
+  O'Hara, Simpson, Solymos, Stevens \& Wagner}]{Oksanen2010}
+Oksanen, J., Blanchet, F.~G., Kindt, R., Legendre, P., O'Hara, R.~B., Simpson,
+  G.~L., Solymos, P., Stevens, M. H.~H. \& Wagner, H. (2010).
+\newblock {vegan: Community Ecology Package}.
+\newblock \urlprefix\url{http://cran.r-project.org/package=vegan}.
+
+\bibitem[{Polis \emph{et~al.}(1997)Polis, Anderson \& Holt}]{Polis1997}
+Polis, G.~A., Anderson, W.~B. \& Holt, R.~D. (1997).
+\newblock Toward an integration of landscape and food web ecology:the dynamics
+  of spatially subsidized food webs.
+\newblock \emph{Annual Review of Ecology and Systematics}, 28, 289--316.
+
+\bibitem[{Rand \emph{et~al.}(2006)Rand, Tylianakis \& Tscharntke}]{Rand2006}
+Rand, T.~A., Tylianakis, J. \& Tscharntke, T. (2006).
+\newblock {Spillover edge effects: the dispersal of agriculturally subsidized
+  insect natural enemies into adjacent natural habitats}.
+\newblock \emph{Ecology Letters}, 9, 603--614.
+
+\bibitem[{Siepielski \& Benkman(2010)}]{Siepielski2010}
+Siepielski, A.~M. \& Benkman, C.~W. (2010).
+\newblock {Conflicting selection from an antagonist and a mutualist enhances
+  phenotypic variation in a plant}.
+\newblock \emph{Evolution}, 64, 1120--1128.
+
+\bibitem[{Strauss \& Irwin(2004)}]{Strauss2004}
+Strauss, S.~Y. \& Irwin, R.~E. (2004).
+\newblock {Ecological and evolutionary consequences of multispecies
+  plant-animal interactions}.
+\newblock \emph{Annual Review of Ecology Evolution and Systematics}, 35,
+  435--466.
+
+\bibitem[{Team(2008)}]{Team2008}
+Team, R. D.~C. (2008).
+\newblock {R: A language and environment for statistical computing}.
+
+\bibitem[{Westphal \emph{et~al.}(2008)Westphal, Bommarco, Carr\'{e}, Lamborn,
+  Morison, Petanidou, Potts, Roberts, Szentgy\"{o}rgyi \&
+  Tscheulin}]{Westphal2008}
+Westphal, C., Bommarco, R., Carr\'{e}, G., Lamborn, E., Morison, N., Petanidou,
+  T., Potts, S.~G., Roberts, S. P.~M., Szentgy\"{o}rgyi, H. \& Tscheulin, T.
+  (2008).
+\newblock {Measuring bee diversity in different European habitats and
+  biogeographical regions}.
+\newblock \emph{Ecological Monographs}, 78, 653--671.
+
+\bibitem[{Whitney \emph{et~al.}(2006)Whitney, Randell \&
+  Rieseberg}]{Whitney2006}
+Whitney, K.~D., Randell, R.~A. \& Rieseberg, L.~H. (2006).
+\newblock {Adaptive introgression of herbivore resistance traits in the weedy
+  sunflower Helianthus annuus}.
+\newblock \emph{The American Naturalist}, 167, 794--807.
+
+\bibitem[{Whitton \emph{et~al.}(1997)Whitton, Wolf, Arias, Snow \&
+  Rieseberg}]{Whitton1997}
+Whitton, J., Wolf, D.~E., Arias, D.~M., Snow, A.~A. \& Rieseberg, L.~H. (1997).
+\newblock {The persistence of cultivar alleles in wild populations of
+  sunflowers five generations after hybridization}.
+\newblock \emph{Theoretical and Applied Genetics}, 95, 33--40.
+
+\end{thebibliography}
