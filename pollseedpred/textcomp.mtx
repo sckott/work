@@ -1,0 +1,163 @@
+\relax
+
+\documentstyle[fontinst]{ltugboat}
+
+\title{The {\tt fontinst} companion glyphs}
+\author{Sebastian Rahtz}
+\date{December 14th 1995}
+\address{}
+\netaddress{s.rahtz@elsevier.co.uk}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This document describes the glyphs used by the {\tt fontinst} 
+package when generating Text Companion fonts.
+
+\raggedright
+
+
+% Uses the fontinst package.
+
+\needsfontinstversion{1.335}
+
+
+\metrics
+
+% \unfakable is a glyph which can't be faked.
+
+\setcommand\unfakable#1{
+   \setglyph{#1}
+      \ifisglyph{#1-not}\then
+         \moveup{\neg{\depth{#1-not}}}
+         \glyphrule{
+            \width{#1-not}
+         }{
+            \add{\depth{#1-not}}{\height{#1-not}}
+         }
+         \resetitalic{\italic{#1-not}}
+         \moveup{\depth{#1-not}}
+      \else
+         \glyphrule{500}{500}
+      \fi
+      \glyphwarning{missing glyph `#1'}
+   \endsetglyph
+}
+
+\comment{\section{Default values}}
+
+\setint{italicslant}{0}
+\setint{xheight}{\height{x}}
+\setint{capheight}{\height{A}}
+\setint{ascender}{\height{d}}
+\setint{descender}{\depth{g}}
+\setint{underlinethickness}{40}
+\setint{visiblespacedepth}{200}
+\setint{visiblespacewidth}{400}
+\setint{visiblespacesurround}{50}
+\setint{smallcapsscale}{800}
+\setint{smallcapskerning}{900}
+
+
+\comment{\section{Unfakable glyphs}}
+
+\unfakable{acute}
+\unfakable{arrowdown}
+\unfakable{arrowup}
+\unfakable{baht}
+\unfakable{bigcircle}
+\unfakable{blank}
+\unfakable{born}
+\unfakable{breve}
+\unfakable{brokenbar}
+\unfakable{caron}
+\unfakable{centeredstar}
+\unfakable{centigrade}
+\unfakable{centoldstyle}
+\unfakable{cent}
+\unfakable{circumflex}
+\unfakable{colon}
+\unfakable{currency}
+\unfakable{daggerdbl}
+\unfakable{degree}
+\unfakable{died}
+\unfakable{dieresis}
+\unfakable{divide}
+\unfakable{divorced}
+\unfakable{dollar}
+\unfakable{dong}
+\unfakable{dotaccent}
+\unfakable{doublebacktick}
+\unfakable{doublevert}
+\unfakable{eightoldstyle}
+\unfakable{fouroldstyle}
+\unfakable{gnaborretni}
+\unfakable{grave}
+\unfakable{guarani}
+\unfakable{highdieresis}
+\unfakable{interrobang}
+\unfakable{leaf}
+\unfakable{leftpointingarrow}
+\unfakable{lira}
+\unfakable{married}
+\unfakable{mho}
+\unfakable{musicalnote}
+\unfakable{naira}
+\unfakable{ogonek}
+\unfakable{ohm}
+\unfakable{onequarter}
+\unfakable{onesuperior}
+\unfakable{ordfeminine}
+\unfakable{paragraph}
+\unfakable{pertenthousand}
+\unfakable{perthousand}
+\unfakable{peso}
+\unfakable{pilcrow}
+\unfakable{quotedblbase}
+\unfakable{recipe}
+\unfakable{registered}
+\unfakable{rightpointingarrow}
+\unfakable{ring}
+\unfakable{shortequals}
+\unfakable{sixoldstyle}
+\unfakable{threequartersemdash}
+\unfakable{threequarters}
+\unfakable{tieaccentcapital}
+\unfakable{twelveudash}
+\unfakable{twooldstyle}
+\unfakable{twosuperior}
+\unfakable{won}
+\unfakable{zerooldstyle}
+
+
+\comment{\section{Accents}
+   \TeX's math accent-positioning requires accents to have zero depth.}
+
+\setcommand\zerodepth#1{
+   \resetglyph{#1}
+      \glyph{#1}{1000}
+      \resetdepth{0}
+   \endresetglyph
+}
+
+\zerodepth{capitalacute}
+\zerodepth{capitalgrave}
+\zerodepth{capitalcaron}
+\zerodepth{capitalbreve}
+\zerodepth{capitalmacron}
+\zerodepth{capitalring}
+\zerodepth{capitalcircumflex}
+\zerodepth{capitaldotaccent}
+\zerodepth{capitaltilde}
+\zerodepth{capitaldieresis}
+   
+\endmetrics
+
+\makesignature
+
+\end{document}
+
+

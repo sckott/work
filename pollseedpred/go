@@ -1,0 +1,11 @@
+tex textcomp.ins
+tex makets1.tex
+for i in *.vpl
+do
+ B=`basename $i .vpl`
+ echo Process $i
+ vptovf $i $B.vf $B.tfm
+done
+rm *.vpl p*.mtx m*.mtx *.log  *.pl *8r* 
+
+

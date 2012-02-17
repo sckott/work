@@ -1,46 +1,72 @@
 This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ChamberlainEtal_pollseedpredMS.aux
-The style file: ecology_letters2.bst
-Database file #1: /Users/ScottMac/github/SChamberlain/work/pollseedpred.bib
-You've used 19 entries,
-            2860 wiz_defined-function locations,
-            788 strings with 9555 characters,
-and the built_in function-call counts, 11084 in all, are:
-= -- 991
-> -- 766
-< -- 7
-+ -- 292
-- -- 273
-* -- 1082
-:= -- 2089
-add.period$ -- 56
-call.type$ -- 19
-change.case$ -- 185
-chr.to.int$ -- 19
-cite$ -- 19
-duplicate$ -- 382
-empty$ -- 593
-format.name$ -- 328
-if$ -- 2016
+The style file: plainnat.bst
+I couldn't open database file /Users/ScottMac/github/SChamberlain/work/pollseedpred.bib
+---line 43 of file ChamberlainEtal_pollseedpredMS.aux
+ : \bibdata{/Users/ScottMac/github/SChamberlain/work/pollseedpred
+ :                                                               }
+I'm skipping whatever remains of this command
+I found no database files---while reading file ChamberlainEtal_pollseedpredMS.aux
+Warning--I didn't find a database entry for "McKinney2006"
+Warning--I didn't find a database entry for "Dormann2007"
+Warning--I didn't find a database entry for "Foley2005"
+Warning--I didn't find a database entry for "Rand2006"
+Warning--I didn't find a database entry for "Polis1997"
+Warning--I didn't find a database entry for "Strauss2004"
+Warning--I didn't find a database entry for "Cariveau2004"
+Warning--I didn't find a database entry for "Irwin2003"
+Warning--I didn't find a database entry for "Siepielski2010"
+Warning--I didn't find a database entry for "Burke2002"
+Warning--I didn't find a database entry for "Whitton1997"
+Warning--I didn't find a database entry for "Linder1998"
+Warning--I didn't find a database entry for "Greenleaf2006"
+Warning--I didn't find a database entry for "Whitney2006"
+Warning--I didn't find a database entry for "Westphal2008"
+Warning--I didn't find a database entry for "Michener2000"
+Warning--I didn't find a database entry for "Michener1994"
+Warning--I didn't find a database entry for "Oksanen2010"
+Warning--I didn't find a database entry for "Chao1984"
+Warning--I didn't find a database entry for "Team2008"
+You've used 0 entries,
+            2773 wiz_defined-function locations,
+            632 strings with 5349 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 18
-newline$ -- 101
-num.names$ -- 76
-pop$ -- 172
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 167
+purify$ -- 0
 quote$ -- 0
-skip$ -- 231
+skip$ -- 1
 stack$ -- 0
-substring$ -- 617
-swap$ -- 78
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
+type$ -- 0
 warning$ -- 0
-while$ -- 88
+while$ -- 0
 width$ -- 0
-write$ -- 248
+write$ -- 7
+(There were 2 error messages)

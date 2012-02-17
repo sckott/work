@@ -1,0 +1,83 @@
+Sebastian,
+
+this reply took longer than expected, since the machine where I unpacked 
+your package went down for about a week without prior announce.
+
+First there are some omissions in the style file and/or the table:
+
+\textblank    {'040}                               missing in the table
+\textdivorced {'143} % divorced                    missing in both
+\textdong     {'226} % Dong (currency of vietnam)  missing in both
+\textpertenthousand {'230}                         missing in both
+\textpilcrow  {'231}                               missing in both
+\textbaht     {'232} % Baht (currency of thailand) missing in both
+
+
+The 
+\textshortequals 
+should be taken from position {'055}, not as currently from {'177}:
+The one at '177 is designed as a hanging hyphenchar, where '055 is non-
+hanging (like usual hyphen).
+
+I suggest to rename 
+\textasciitilde {'176} to
+\textlowtilde.
+  In fact, the `ASCII tilde' is not defined in typographical terms, if it is 
+high (like an accent) or low in its box. The dc fonts contain a high
+`\textasciitilde'; the companion complement is by design low lying, 
+therefore the suggested name \textlowtilde.
+
+The 
+\textbigcircle
+is in fact that circle which is used by the \textcircled command. I 
+therefore suggest to move the definition of \textcircled from OMSenc.def
+to TS1. Here is the relevant snippet, adapted to TS1:
+
+\DeclareTextCommand{\textcircled}{TS1}[1]{{%
+   \ooalign{%
+      \hfil \raise .07ex\hbox {\upshape#1}\hfil \crcr
+      \char'117 % 
+   }%
+}}
+
+Comment: Since the TS1 encoding provides oblique fonts (with oblique 
+bigcircles!), the command \upshape can be removed.
+
+The two tie accents are in fact meant to replace the definition of \t from
+OMLenc.def (this is the only reference to OML in text mode). As a first step 
+I suggest to use the `lowercase accent' everywhere, I'm just thinking on 
+how to implement the choice of different accents according to the case of 
+the accentee. This gives the following:
+
+\DeclareTextAccent{\t}{TS1}{'032}
+
+The definitions of 
+\texttieaccentlowercase and \texttieaccentuppercase
+can be dropped (both from the package and from the table).
+
+[...]
+
+Actually, here's what I'm suggesting for the accents designed for capital
+letters:
+
+There are commands like \capitalacute (you may want to add {text} to the 
+names), defined in the following way:
+
+%
+% Acute accent for capitals
+%
+\DeclareTextAccentDefault{\capitalacute}{TS1}
+\DeclareTextAccent{\capitalacute}{TS1}{'001}
+%
+
+This command can be used by the end user either directly or through 
+definitions of the type
+
+\DeclareTextCompositeCommand{\'}{T1}{X}{\capitalacute X}
+
+None of the latter definitions should be provided by default, since they are 
+probably rarely used.
+
+Yours,
+J"org Knappen.
+

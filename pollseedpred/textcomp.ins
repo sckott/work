@@ -1,0 +1,62 @@
+% \iffalse
+% LaTex2e support for Text Companion fonts
+%
+% Sebastian Rahtz
+%
+% \fi
+\def\fileversion{1.0}
+\def\filedate{1995/10/14}
+%
+% \StopEventually{}
+%
+% As always we begin by identifying the latest version of this file
+% on the VDU and in the {\sf log} file.
+%    \begin{macrocode}
+\def\batchfile{textcomp.ins}
+\input docstrip.tex
+\preamble
+
+Copyright (C) 1995 by Sebastian Rahtz
+All rights reserved.
+
+\endpreamble
+
+\def\batchfile{textcomp.dst}    % ignored in distribution
+\input docstrip.tex            % ignored in distribution 
+
+\keepsilent
+
+\preamble
+Copyright (C) 1995 Sebastian Rahtz. All rights reserved.
+Permission is granted to to
+customize the declarations in this file to serve the needs of your
+installation.  However, no permission is granted to distribute a
+modified version of this file under its original name.
+
+\endpreamble
+
+
+\Msg{*** Generating textcomp.sty file}
+\generateFile{textcomp.sty}{f}{
+        \from{textcomp.dtx}{sty}}
+
+\generateFile{textcomp.tex}{f}{
+        \from{textcomp.dtx}{tex}}
+
+\Msg{*** Generating test file}
+\generateFile{test.tex}{f}{
+        \from{textcomp.dtx}{test}}
+
+
+\Msg{***********************************************************}
+\Msg{*}
+\Msg{* To finish the installation you have to move the following}
+\Msg{* files into a directory searched by TeX:}
+\Msg{*}
+\Msg{* \space\space  *.sty}
+\Msg{*}
+\Msg{***********************************************************}
+
+
+\endinput
+

@@ -1,0 +1,29 @@
+This is the second shot at fontinst and LaTeX2e support for 
+Joerg Knappen's new Text Companion font encoding, pioneered 
+in DC fonts 1.2. Joerg has looked at the first attempt and made
+a number of suggestions and changes, all used.
+
+There are probably quite a few glyphs which could or should
+be defined as fakes in textcomp.mtx, if someone has the energy
+to work it all out. I have the energy but no time.
+
+This package contains
+ 1) an mtx file (textcomp.mtx) which contains the list of glyphs
+ 2) TS1i.etx and TS1.etx encoding files
+ 3) a set of support macros (textcomp.tex) (which could later be
+    merged into fontinst.sty once Alan has looked at them)
+ 4) a textcomp.dtx/.ins file which expands to textcomp.sty and test.tex,
+   giving LaTeX users access to the new glyphs, and overriding the default
+   settings as appropriate (ie if you ask for a symbol it'll come out
+   by default from TS1, unless you are in an encoding where it
+   is declared already). this has the `right' effect, ie bullets no longer
+   come from maths fonts
+
+The script "makets1.tex" builds the new fonts for Adobe Times,
+Monotype Times, and Monotype Baskerville
+(with expert sets). The TS1 encoding is named 8c in Karl
+Berry's scheme, or 9c if it includes expert set glyphs.
+
+Sebastian Rahtz
+November 8th 1995
+

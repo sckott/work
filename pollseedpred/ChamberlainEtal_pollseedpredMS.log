@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  14 DEC 2011 15:49
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 JAN 2012 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -39,73 +39,6 @@ Package: natbib 1998/07/14 6.8c (PWD)
 LaTeX Info: Redefining \cite on input line 467.
 \c@NAT@ctr=\count87
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
-)
 (/usr/local/texlive/2011/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count88
@@ -139,23 +72,81 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 11.
  [1
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 46.
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omlcmr.fd
+Package natbib Warning: Citation `McKinney2006' on page 2 undefined on input li
+ne 31.
+
+
+Package natbib Warning: Citation `Dormann2007' on page 2 undefined on input lin
+e 31.
+
+
+Package natbib Warning: Citation `Foley2005' on page 2 undefined on input line 
+31.
+
+
+Package natbib Warning: Citation `Rand2006' on page 2 undefined on input line 3
+3.
+
+
+Package natbib Warning: Citation `Polis1997' on page 2 undefined on input line 
+33.
+
+
+Package natbib Warning: Citation `Strauss2004' on page 2 undefined on input lin
+e 35.
+
+
+Package natbib Warning: Citation `Cariveau2004' on page 2 undefined on input li
+ne 35.
+
+
+Package natbib Warning: Citation `Irwin2003' on page 2 undefined on input line 
+35.
+
+
+Package natbib Warning: Citation `Siepielski2010' on page 2 undefined on input 
+line 35.
+
+[2]
+
+Package natbib Warning: Citation `Burke2002' on page 3 undefined on input line 
+41.
+
+
+Package natbib Warning: Citation `Whitton1997' on page 3 undefined on input lin
+e 41.
+
+
+Package natbib Warning: Citation `Linder1998' on page 3 undefined on input line
+ 41.
+
+
+Package natbib Warning: Citation `Linder1998' on page 3 undefined on input line
+ 41.
+
+
+Package natbib Warning: Citation `Greenleaf2006' on page 3 undefined on input l
+ine 43.
+
+
+Package natbib Warning: Citation `Whitney2006' on page 3 undefined on input lin
+e 43.
+
+
+Package natbib Warning: Citation `Whitney2006' on page 3 undefined on input lin
+e 43.
+
+[3]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 46.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
@@ -166,40 +157,65 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 46.
- [4] [5] [6]
-(./ChamberlainEtal_pollseedpredMS.bbl
-Underfull \hbox (badness 3009) in paragraph at lines 76--80
-[]\OT1/cmr/m/n/12 Oksanen, J., Blanchet, F. G., Kindt, R., Leg-en-dre, P., O'Ha
-ra,
- []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 76--80
-\OT1/cmr/m/n/12 ner, H. (2010).  ve-gan: Com-mu-nity Ecol-ogy Pack-age.  URL
- []
+Package natbib Warning: Citation `Westphal2008' on page 4 undefined on input li
+ne 55.
 
-[7]) [8] [9] (./ChamberlainEtal_pollseedpredMS.aux) ) 
+
+Package natbib Warning: Citation `Michener2000' on page 4 undefined on input li
+ne 55.
+
+
+Package natbib Warning: Citation `Michener1994' on page 4 undefined on input li
+ne 55.
+
+
+Package natbib Warning: Citation `Michener2000' on page 4 undefined on input li
+ne 55.
+
+[4]
+
+Package natbib Warning: Citation `Oksanen2010' on page 5 undefined on input lin
+e 65.
+
+
+Package natbib Warning: Citation `Chao1984' on page 5 undefined on input line 6
+5.
+
+
+Package natbib Warning: Citation `Team2008' on page 5 undefined on input line 6
+5.
+
+[5] [6] (./ChamberlainEtal_pollseedpredMS.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+) [7]
+
+Package natbib Warning: There were undefined citations.
+
+[8] (./ChamberlainEtal_pollseedpredMS.aux) ) 
 Here is how much of TeX's memory you used:
- 1150 strings out of 493633
- 15984 string characters out of 3143378
- 62834 words of memory out of 3000000
- 4500 multiletter control sequences out of 15000+200000
- 9624 words of font info for 34 fonts, out of 3000000 for 9000
+ 702 strings out of 493633
+ 8962 string characters out of 3143378
+ 60422 words of memory out of 3000000
+ 4062 multiletter control sequences out of 15000+200000
+ 9455 words of font info for 33 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 23i,6n,24p,1215b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2011/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ChamberlainEtal_pollseedpredMS.pdf (9 pages, 110979 bytes).
+ 23i,6n,22p,1215b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2011/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb>
+Output written on ChamberlainEtal_pollseedpredMS.pdf (8 pages, 93306 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

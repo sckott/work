@@ -1,0 +1,696 @@
+\def\fileversion{1.4}
+\def\filedate{1995/12/11}
+\def\docdate {1995/11/07}
+% \iffalse
+% File: textcomp.dtx Copyright (C) 1995 Sebastian Rahtz
+%<*driver>
+\documentclass{ltxdoc}
+\begin{document}
+ \title{The \textsf{textcomp} package for using Text Companion fonts
+        \thanks{This file
+        has version number \fileversion, last
+        revised \filedate.}}
+ \author{Sebastian Rahtz\\s.rahtz@elsevier.co.uk}
+ \date{\filedate}
+ \maketitle
+ \DocInput{textcomp.dtx}
+\end{document}
+%</driver>
+% \fi
+% \CheckSum{742}
+% \maketitle
+% \section{Introduction}
+% This style is no more than a formalisation of the work by J\"org Knappen
+% on the text companion fonts.
+% \StopEventually{}
+% \section{Symbols}
+%    \begin{macrocode}
+%<*sty>
+\DeclareFontEncoding{TS1}{}{}
+\DeclareFontSubstitution{TS1}{cmr}{m}{n}
+%    \end{macrocode}
+% basesingle straight quote 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textquotesinglbase}{TS1}{'015}
+\DeclareTextSymbolDefault{\textquotesinglbase}{TS1}
+%    \end{macrocode}
+% base double straight quotes 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textquotedblbase}{TS1}{'022}
+\DeclareTextSymbolDefault{\textquotedblbase}{TS1}
+%    \end{macrocode}
+% twelve u dash 
+%    \begin{macrocode}
+\DeclareTextSymbol{\texttwelveudash}{TS1}{'025}
+\DeclareTextSymbolDefault{\texttwelveudash}{TS1}
+%    \end{macrocode}
+% threequarters emdash 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textthreequartersemdash}{TS1}{'026}
+\DeclareTextSymbolDefault{\textthreequartersemdash}{TS1}
+%    \end{macrocode}
+% left pointing arrow 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textleftpointingarrow}{TS1}{'030}
+\DeclareTextSymbolDefault{\textleftpointingarrow}{TS1}
+%    \end{macrocode}
+% right pointing arrow 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textrightpointingarrow}{TS1}{'031}
+\DeclareTextSymbolDefault{\textrightpointingarrow}{TS1}
+%    \end{macrocode}
+% blank symbol 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textblank}{TS1}{'040}
+\DeclareTextSymbolDefault{\textblank}{TS1}
+%    \end{macrocode}
+% dollar sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdollar}{TS1}{'044}
+\DeclareTextSymbolDefault{\textdollar}{TS1}
+%    \end{macrocode}
+% straight quote 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textquotesingle}{TS1}{'047}
+\DeclareTextSymbolDefault{\textquotesingle}{TS1}
+%    \end{macrocode}
+% centered star 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcenteredstar}{TS1}{'052}
+\DeclareTextSymbolDefault{\textcenteredstar}{TS1}
+%    \end{macrocode}
+% fraction 
+%    \begin{macrocode}
+\DeclareTextSymbol{\fraction}{TS1}{'057}
+\DeclareTextSymbolDefault{\fraction}{TS1}
+%    \end{macrocode}
+% oldstyle digit 0 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textzerooldstyle}{TS1}{'060}
+\DeclareTextSymbolDefault{\textzerooldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 1 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textoneoldstyle}{TS1}{'061}
+\DeclareTextSymbolDefault{\textoneoldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 2 
+%    \begin{macrocode}
+\DeclareTextSymbol{\texttwooldstyle}{TS1}{'062}
+\DeclareTextSymbolDefault{\texttwooldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 3 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textthreeoldstyle}{TS1}{'063}
+\DeclareTextSymbolDefault{\textthreeoldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 4 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textfouroldstyle}{TS1}{'064}
+\DeclareTextSymbolDefault{\textfouroldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 5 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textfiveoldstyle}{TS1}{'065}
+\DeclareTextSymbolDefault{\textfiveoldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 6 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textsixoldstyle}{TS1}{'066}
+\DeclareTextSymbolDefault{\textsixoldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 7 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textsevenoldstyle}{TS1}{'067}
+\DeclareTextSymbolDefault{\textsevenoldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 8 
+%    \begin{macrocode}
+\DeclareTextSymbol{\texteightoldstyle}{TS1}{'070}
+\DeclareTextSymbolDefault{\texteightoldstyle}{TS1}
+%    \end{macrocode}
+% oldstyle digit 9 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textnineoldstyle}{TS1}{'071}
+\DeclareTextSymbolDefault{\textnineoldstyle}{TS1}
+%    \end{macrocode}
+% mho sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textmho}{TS1}{'115}
+\DeclareTextSymbolDefault{\textmho}{TS1}
+%    \end{macrocode}
+% big circle 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textbigcircle}{TS1}{'117}
+\DeclareTextSymbolDefault{\textbigcircle}{TS1}
+\DeclareTextCommand{\textcircled}{TS1}[1]{{%
+   \ooalign{%
+      \hfil \raise .07ex\hbox #1\hfil \crcr
+      \char'117 % 
+   }%
+}}
+%    \end{macrocode}
+% ohm sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textohm}{TS1}{'127}
+\DeclareTextSymbolDefault{\textohm}{TS1}
+%    \end{macrocode}
+% arrow up 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textarrowup}{TS1}{'136}
+\DeclareTextSymbolDefault{\textarrowup}{TS1}
+%    \end{macrocode}
+% arrow down 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textarrowdown}{TS1}{'137}
+\DeclareTextSymbolDefault{\textarrowdown}{TS1}
+%    \end{macrocode}
+% backtick(ASCIIgrave) 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textgrave}{TS1}{'140}
+\DeclareTextSymbolDefault{\textgrave}{TS1}
+%    \end{macrocode}
+% born 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textborn}{TS1}{'142}
+\DeclareTextSymbolDefault{\textborn}{TS1}
+%    \end{macrocode}
+% died 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdied}{TS1}{'144}
+\DeclareTextSymbolDefault{\textdied}{TS1}
+%    \end{macrocode}
+% divorced
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdivorced}{TS1}{'143}
+\DeclareTextSymbolDefault{\textdivorced}{TS1}
+%    \end{macrocode}
+% leaf 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textleaf}{TS1}{'154}
+\DeclareTextSymbolDefault{\textleaf}{TS1}
+%    \end{macrocode}
+% married 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textmarried}{TS1}{'155}
+\DeclareTextSymbolDefault{\textmarried}{TS1}
+%    \end{macrocode}
+% musical note 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textmusicalnote}{TS1}{'156}
+\DeclareTextSymbolDefault{\textmusicalnote}{TS1}
+%    \end{macrocode}
+% low tilde 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textlowtilde}{TS1}{'176}
+\DeclareTextSymbolDefault{\textlowtilde}{TS1}
+%    \end{macrocode}
+% short equals 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textshortequals}{TS1}{'055}
+\DeclareTextSymbolDefault{\textshortequals}{TS1}
+%    \end{macrocode}
+% doubletick (ASCII doubleacute) 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textquotedbl}{TS1}{'202}
+\DeclareTextSymbolDefault{\textquotedbl}{TS1}
+%    \end{macrocode}
+% doublebacktick 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdoublebacktick}{TS1}{'203}
+\DeclareTextSymbolDefault{\textdoublebacktick}{TS1}
+%    \end{macrocode}
+% dagger 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdagger}{TS1}{'204}
+\DeclareTextSymbolDefault{\textdagger}{TS1}
+%    \end{macrocode}
+% ddagger 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdaggerdbl}{TS1}{'205}
+\DeclareTextSymbolDefault{\textdaggerdbl}{TS1}
+%    \end{macrocode}
+% doublevert 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdoublevert}{TS1}{'206}
+\DeclareTextSymbolDefault{\textdoublevert}{TS1}
+%    \end{macrocode}
+% perthousand 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textperthousand}{TS1}{'207}
+\DeclareTextSymbolDefault{\textperthousand}{TS1}
+%    \end{macrocode}
+% bullet 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textbullet}{TS1}{'210}
+\DeclareTextSymbolDefault{\textbullet}{TS1}
+%    \end{macrocode}
+% centigrade 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcentigrade}{TS1}{'211}
+\DeclareTextSymbolDefault{\textcentigrade}{TS1}
+%    \end{macrocode}
+% dollar oldstyle 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdollaroldstyle}{TS1}{'212}
+\DeclareTextSymbolDefault{\textdollaroldstyle}{TS1}
+%    \end{macrocode}
+% cent oldstyle 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcentoldstyle}{TS1}{'213}
+\DeclareTextSymbolDefault{\textcentoldstyle}{TS1}
+%    \end{macrocode}
+% florin 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textflorin}{TS1}{'214}
+\DeclareTextSymbolDefault{\textflorin}{TS1}
+%    \end{macrocode}
+% colon 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcolonmonetary}{TS1}{'215}
+\DeclareTextSymbolDefault{\textcolonmonetary}{TS1}
+%    \end{macrocode}
+% won 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textwon}{TS1}{'216}
+\DeclareTextSymbolDefault{\textwon}{TS1}
+%    \end{macrocode}
+% naira 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textnaira}{TS1}{'217}
+\DeclareTextSymbolDefault{\textnaira}{TS1}
+%    \end{macrocode}
+% guarani 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textguarani}{TS1}{'220}
+\DeclareTextSymbolDefault{\textguarani}{TS1}
+%    \end{macrocode}
+% peso 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textpeso}{TS1}{'221}
+\DeclareTextSymbolDefault{\textpeso}{TS1}
+%    \end{macrocode}
+% lira 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textlira}{TS1}{'222}
+\DeclareTextSymbolDefault{\textlira}{TS1}
+%    \end{macrocode}
+% recipe 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textrecipe}{TS1}{'223}
+\DeclareTextSymbolDefault{\textrecipe}{TS1}
+%    \end{macrocode}
+% interrobang 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textinterrobang}{TS1}{'224}
+\DeclareTextSymbolDefault{\textinterrobang}{TS1}
+%    \end{macrocode}
+% gnaborretni 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textgnaborretni}{TS1}{'225}
+\DeclareTextSymbolDefault{\textgnaborretni}{TS1}
+%    \end{macrocode}
+% vietnamese currency, dong
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdong}{TS1}{'226}
+\DeclareTextSymbolDefault{\textdong}{TS1}
+%    \end{macrocode}
+% trademark 
+%    \begin{macrocode}
+\DeclareTextSymbol{\texttrademark}{TS1}{'227}
+\DeclareTextSymbolDefault{\texttrademark}{TS1}
+%    \end{macrocode}
+% per ten thousand
+%    \begin{macrocode}
+\DeclareTextSymbol{\textpertenthousand}{TS1}{'230}
+\DeclareTextSymbolDefault{\textpertenthousand}{TS1}
+%    \end{macrocode}
+% pilcrow
+%    \begin{macrocode}
+\DeclareTextSymbol{\textpilcrow}{TS1}{'231}
+\DeclareTextSymbolDefault{\textpilcrow}{TS1}
+%    \end{macrocode}
+% baht (thailand currency)
+%    \begin{macrocode}
+\DeclareTextSymbol{\textbaht}{TS1}{'232}
+\DeclareTextSymbolDefault{\textbaht}{TS1}
+%    \end{macrocode}
+% cent 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcent}{TS1}{'242}
+\DeclareTextSymbolDefault{\textcent}{TS1}
+%    \end{macrocode}
+% sterling 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textsterling}{TS1}{'243}
+\DeclareTextSymbolDefault{\textsterling}{TS1}
+%    \end{macrocode}
+% currency sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcurrency}{TS1}{'244}
+\DeclareTextSymbolDefault{\textcurrency}{TS1}
+%    \end{macrocode}
+% yen 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textyen}{TS1}{'245}
+\DeclareTextSymbolDefault{\textyen}{TS1}
+%    \end{macrocode}
+% broken vertical bar 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textbrokenbar}{TS1}{'246}
+\DeclareTextSymbolDefault{\textbrokenbar}{TS1}
+%    \end{macrocode}
+% section sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textsection}{TS1}{'247}
+\DeclareTextSymbolDefault{\textsection}{TS1}
+%    \end{macrocode}
+% high dieresis 
+%    \begin{macrocode}
+\DeclareTextSymbol{\texthighdieresis}{TS1}{'250}
+\DeclareTextSymbolDefault{\texthighdieresis}{TS1}
+%    \end{macrocode}
+% copyright 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textcopyright}{TS1}{'251}
+\DeclareTextSymbolDefault{\textcopyright}{TS1}
+%    \end{macrocode}
+% feminineordinalindicator 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textordfeminine}{TS1}{'252}
+\DeclareTextSymbolDefault{\textordfeminine}{TS1}
+%    \end{macrocode}
+% logical not 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textlogicalnot}{TS1}{'254}
+\DeclareTextSymbolDefault{\textlogicalnot}{TS1}
+%    \end{macrocode}
+% circled R 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textregistered}{TS1}{'256}
+\DeclareTextSymbolDefault{\textregistered}{TS1}
+%    \end{macrocode}
+% macron 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textmacron}{TS1}{'257}
+\DeclareTextSymbolDefault{\textmacron}{TS1}
+%    \end{macrocode}
+% degree sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdegree}{TS1}{'260}
+\DeclareTextSymbolDefault{\textdegree}{TS1}
+%    \end{macrocode}
+% plus-minus sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textplusminus}{TS1}{'261}
+\DeclareTextSymbolDefault{\textplusminus}{TS1}
+%    \end{macrocode}
+% superscript 2 
+%    \begin{macrocode}
+\DeclareTextSymbol{\texttwosuperior}{TS1}{'262}
+\DeclareTextSymbolDefault{\texttwosuperior}{TS1}
+%    \end{macrocode}
+% superscript 3 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textthreesuperior}{TS1}{'263}
+\DeclareTextSymbolDefault{\textthreesuperior}{TS1}
+%    \end{macrocode}
+% tick (ASCII-style acute) 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textacute}{TS1}{'264}
+\DeclareTextSymbolDefault{\textacute}{TS1}
+%    \end{macrocode}
+% micro sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textmu}{TS1}{'265}
+\DeclareTextSymbolDefault{\textmu}{TS1}
+%    \end{macrocode}
+% pilcrow sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textparagraph}{TS1}{'266}
+\DeclareTextSymbolDefault{\textparagraph}{TS1}
+%    \end{macrocode}
+% centered dot 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textperiodcentered}{TS1}{'267}
+\DeclareTextSymbolDefault{\textperiodcentered}{TS1}
+%    \end{macrocode}
+% superscript 1 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textonesuperior}{TS1}{'271}
+\DeclareTextSymbolDefault{\textonesuperior}{TS1}
+%    \end{macrocode}
+% masculine ordinal indicator 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textordmasculine}{TS1}{'272}
+\DeclareTextSymbolDefault{\textordmasculine}{TS1}
+%    \end{macrocode}
+% fraction one quarter 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textonequarter}{TS1}{'274}
+\DeclareTextSymbolDefault{\textonequarter}{TS1}
+%    \end{macrocode}
+% fraction one half 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textonehalf}{TS1}{'275}
+\DeclareTextSymbolDefault{\textonehalf}{TS1}
+%    \end{macrocode}
+% fraction three quarters 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textthreequarters}{TS1}{'276}
+\DeclareTextSymbolDefault{\textthreequarters}{TS1}
+%    \end{macrocode}
+% multiplication sign (times) 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textmultiply}{TS1}{'326}
+\DeclareTextSymbolDefault{\textmultiply}{TS1}
+%    \end{macrocode}
+% division sign 
+%    \begin{macrocode}
+\DeclareTextSymbol{\textdivide}{TS1}{'366}
+\DeclareTextSymbolDefault{\textdivide}{TS1}
+%    \end{macrocode}
+% \section{Accents}
+%    \begin{macrocode}
+\DeclareTextAccent{\t}{TS1}{'032}
+%    \end{macrocode}
+% \subsection{Acute accent for capitals}
+%    \begin{macrocode}
+\DeclareTextAccentDefault{\capitalacute}{TS1}
+\DeclareTextAccent{\capitalacute}{TS1}{'001}
+%
+\DeclareTextAccentDefault{\capitalcircumflex}{TS1}
+\DeclareTextAccent{\circumflex}{TS1}{'002}
+%
+\DeclareTextAccentDefault{\capitaltilde}{TS1}
+\DeclareTextAccent{\capitaltilde}{TS1}{'003}
+%
+\DeclareTextAccentDefault{\capitaldieresis}{TS1}
+\DeclareTextAccent{\capitaldieresis}{TS1}{'004}
+%
+\DeclareTextAccentDefault{\capitalhungarumlaut}{TS1}
+\DeclareTextAccent{\hungarumlaut}{TS1}{'005}
+%
+\DeclareTextAccentDefault{\capitalring}{TS1}
+\DeclareTextAccent{\capitalring}{TS1}{'006}
+%
+\DeclareTextAccentDefault{\capitalcaron}{TS1}
+\DeclareTextAccent{\capitalcaron}{TS1}{'007}
+%
+\DeclareTextAccentDefault{\capitalbreve}{TS1}
+\DeclareTextAccent{\capitalbreve}{TS1}{'0010}
+%
+\DeclareTextAccentDefault{\capitalmacron}{TS1}
+\DeclareTextAccent{\capitalmacron}{TS1}{'0011}
+%
+\DeclareTextAccentDefault{\capitaldotaccent}{TS1}
+\DeclareTextAccent{\capitaldotaccent}{TS1}{'0012}
+%
+\DeclareTextAccentDefault{\capitalcedilla}{TS1}
+\DeclareTextAccent{\capitalcedilla}{TS1}{'0013}
+%
+\DeclareTextAccentDefault{\capitalogonek}{TS1}
+\DeclareTextAccent{\capitalogonek}{TS1}{'0014}
+%    \end{macrocode}
+% These command can be used by the end user either directly or through 
+% definitions of the type
+% \begin{verbatim}
+% \DeclareTextCompositeCommand{\'}{T1}{X}{\capitalacute X}
+% \end{verbatim}
+% None of the latter definitions are provided by default, since they are 
+% probably rarely used.
+%    \begin{macrocode}
+%</sty>
+%<*tex>
+\catcode`\_=11 
+\catcode`\ =9 
+\catcode`\^^M=9 
+\catcode`\@=11 
+\catcode`\_=11 
+\catcode`\~=10 
+\def\textcomp_encoding#1#2#3{ 
+   \gdef\latex_encoding{#2} 
+   \if_expert_
+      \gdef\font_encoding{#3}
+   \else
+      \gdef\font_encoding{#1} 
+   \fi
+   \gdef\expert_font{} 
+   \if_expert_ 
+      \if_file_exists{ 
+         \font_family\font_weight\raw_shape\raw_variant
+            \expert_encoding\font_width.mtx 
+      }\then 
+         \gdef\expert_font{ 
+            \font_family\font_weight\raw_variant\raw_shape 
+               \expert_encoding\font_width, 
+         } 
+      \fi 
+   \fi 
+   \installfont{ 
+      \font_family\font_weight\font_shape\font_variant
+         \font_encoding\font_width 
+   }{ 
+      \font_family\font_weight\raw_shape\raw_variant
+         \raw_encoding\font_width, 
+      \expert_font 
+      textcomp 
+   }{ 
+      \latex_encoding\encoding_shape 
+   }{ 
+      \latex_encoding 
+   }{ 
+      \latex_family 
+   }{ 
+      \latex_weight\latex_width 
+   }{ 
+      \latex_shape 
+   }{} 
+} 
+\def\textcomp_weight#1#2{ 
+   \gdef\font_weight{#1}% 
+   \gdef\latex_weight{#2}% 
+   \textcomp_widths 
+} 
+
+\def\textcomp_weights{ 
+   \textcomp_weight{b}{b} 
+   \textcomp_weight{d}{db}
+   \textcomp_weight{i}{el} 
+   \textcomp_weight{l}{l} 
+   \textcomp_weight{s}{sb} 
+   \textcomp_weight{k}{m} 
+   \textcomp_weight{m}{m} 
+   \textcomp_weight{r}{m} 
+   \textcomp_weight{x}{eb} 
+   \textcomp_weight{u}{ub} 
+} 
+
+\def\textcomp_widths{ 
+   \textcomp_width{}{} 
+   \textcomp_width{c}{sc} 
+} 
+
+\def\textcomp_shapes{ 
+   \textcomp_shape{} {} {} {n} 
+   \textcomp_shape{o}{o}{} {sl} 
+   \textcomp_shape{i}{i}{i}{it} 
+} 
+
+\def\textcomp_encodings{ 
+   \textcomp_encoding{8c}{TS1}{9c} 
+} 
+\def\textcomp_width#1#2{ 
+   \gdef\font_width{#1} 
+   \gdef\latex_width{#2} 
+   \textcomp_shapes 
+} 
+
+% textcomp shape{FONTSHAPE}{RAWSHAPE}{ENCODINGSHAPE}{LATEXSHAPE} 
+
+\def\textcomp_shape#1#2#3#4{ 
+   \gdef\font_shape{#1} 
+   \gdef\raw_shape{#2} 
+   \gdef\encoding_shape{#3} 
+   \gdef\latex_shape{#4} 
+   \csname fake_shape_\raw_shape\endcsname 
+   \if_file_exists{ 
+      \font_family\font_weight\raw_shape
+         \raw_variant\raw_encoding\font_width.mtx 
+   }\then 
+      \textcomp_encodings 
+   \fi 
+} 
+
+\def\textcompfamily#1#2{ 
+   \edef\temp_command{#1} 
+   \expandafter\parse_family\temp_command 
+      \empty_command\empty_command\end_parse_family 
+   \installfonts 
+      \installfamily{TS1}{#1}{#2} 
+      \if_file_exists{ \raw_encoding.mtx }\then
+         \installfamily{\raw_encoding}{#1}{#2}
+      \fi
+      \textcomp_weights 
+   \endinstallfonts 
+} 
+%</tex>
+%<*test>
+\documentclass{article}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\def\rmdefault{cmr}
+\begin{document}
+\begin{tabular}{|ll|ll|}
+\hline
+fraction & \fraction & textacute & \textacute \\
+textarrowdown & \textarrowdown & textarrowup & \textarrowup \\
+textbaht & \textbaht & textbigcircle & \textbigcircle \\
+textblank & \textblank & textblank  & \textblank  \\
+textborn & \textborn & textbrokenbar & \textbrokenbar \\
+textbullet & \textbullet & textcent & \textcent \\
+textcenteredstar & \textcenteredstar & textcentigrade & \textcentigrade \\
+textcentoldstyle & \textcentoldstyle & textcolonmonetary & \textcolonmonetary \\
+textcopyright & \textcopyright & textcurrency & \textcurrency \\
+textdagger & \textdagger & textdaggerdbl & \textdaggerdbl \\
+textdegree & \textdegree & textdied & \textdied \\
+textdivide & \textdivide & textdivorced & \textdivorced \\
+textdollar & \textdollar & textdollaroldstyle & \textdollaroldstyle \\
+textdong  & \textdong  & textdoublebacktick & \textdoublebacktick \\
+textdoublevert & \textdoublevert & texteightoldstyle & \texteightoldstyle \\
+textfiveoldstyle & \textfiveoldstyle & textflorin & \textflorin \\
+textfouroldstyle & \textfouroldstyle & textgnaborretni & \textgnaborretni \\
+textgrave & \textgrave & textguarani & \textguarani \\
+texthighdieresis & \texthighdieresis & textinterrobang & \textinterrobang \\
+textleaf & \textleaf & textleftpointingarrow & \textleftpointingarrow \\
+textlira & \textlira & textlogicalnot & \textlogicalnot \\
+textlowtilde & \textlowtilde & textmacron & \textmacron \\
+textmarried & \textmarried & textmho & \textmho \\
+textmu & \textmu & textmultiply & \textmultiply \\
+textmusicalnote & \textmusicalnote & textnaira & \textnaira \\
+textnineoldstyle & \textnineoldstyle & textohm & \textohm \\
+textonehalf & \textonehalf & textoneoldstyle & \textoneoldstyle \\
+textonequarter & \textonequarter & textonesuperior & \textonesuperior \\
+textordfeminine & \textordfeminine & textordmasculine & \textordmasculine \\
+textparagraph & \textparagraph & textperiodcentered & \textperiodcentered \\
+textpertenthousand & \textpertenthousand & textperthousand & \textperthousand \\
+textpeso & \textpeso & textpilcrow & \textpilcrow \\
+textplusminus & \textplusminus & textquotedbl & \textquotedbl \\
+textquotedblbase & \textquotedblbase & textquotesinglbase & \textquotesinglbase \\
+textquotesingle & \textquotesingle & textrecipe & \textrecipe \\
+textregistered & \textregistered & textrightpointingarrow & \textrightpointingarrow \\
+textsection & \textsection & textsevenoldstyle & \textsevenoldstyle \\
+textshortequals & \textshortequals & textsixoldstyle & \textsixoldstyle \\
+textsterling & \textsterling & textthreeoldstyle & \textthreeoldstyle \\
+textthreequarters & \textthreequarters & textthreequartersemdash & \textthreequartersemdash \\
+textthreesuperior & \textthreesuperior & texttrademark & \texttrademark \\
+texttwelveudash & \texttwelveudash & texttwooldstyle & \texttwooldstyle \\
+texttwosuperior & \texttwosuperior & textwon & \textwon \\
+textyen & \textyen & textzerooldstyle & \textzerooldstyle \\
+\hline
+\end{tabular}
+\end{document}
+%</test>
+%    \end{macrocode}
+% \Finale
+\endinput
