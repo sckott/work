@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Helianthus Sites 3</name>
+  <description><![CDATA[]]></description>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/fishing.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/fishing.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/fishing.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/fishing.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/fishing.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/snowflake_simple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/snowflake_simple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/snowflake_simple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/webcam.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/pink.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/pink.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Steven Beakley</name>
+    <description><![CDATA[<div dir="ltr">Bardwell, TX</div>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-96.697937,32.268757,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kevin Lundgren</name>
+    <description><![CDATA[<div dir="ltr">contact: Ethan, 971-207-6240</div>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-97.395172,30.367100,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Jo Merek</name>
+    <description><![CDATA[<div dir="ltr">approximate location</div>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-97.176132,30.903992,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lesley Merek</name>
+    <description><![CDATA[<div dir="ltr">total guess location</div>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-97.107468,30.941101,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Jon Jaahns</name>
+    <description><![CDATA[<div dir="ltr">total guess location</div>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-97.107635,31.072344,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Beall</name>
+    <Snippet>Helianthus annuus texanusJon Beall (Travis 6) 17312 Littig Rd.jonbeall1@onr.com </Snippet>
+    <description><![CDATA[<div dir="ltr">Helianthus annuus texanus<br><br>Jon Beall (Travis 6) <br>17312 Littig Rd.<br>jonbeall1@onr.com <br>(512) 632-1760</div>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-97.452507,30.326508,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Real 4</name>
+    <description><![CDATA[<div dir="ltr">Potential Ecolab property<br><br></div>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-99.957214,29.865805,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Blanco 6</name>
+    <description><![CDATA[<div dir="ltr">Ecolab property<br><br>Kelley Deming<br>cell is 832-338-4367<br>54 acres located 8.5 m NE of Blanco, 7 m SW of the Hwy 290 / FM 165 intersection<br>Address: 1673....St???</div>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>-98.253265,30.149635,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Big Rig Lot</name>
+    <Snippet>H. annuusDefinitely present, Hundreds of plantsOwner of carlot property gave oka</Snippet>
+    <description><![CDATA[<div dir="ltr">H. annuus<br><br>Definitely present, Hundreds of plants<br>Owner of carlot property gave okay to study plants, <br>On 5 June 09, mostly honey bees seen at flowers</div>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-95.708092,29.830854,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Palm Palace</name>
+    <Snippet>H. annuus texanusHundreds to thousands of plantsVacant lot, not sure of ownershi</Snippet>
+    <description><![CDATA[<div dir="ltr">H. annuus texanus<br><br>Hundreds to thousands of plants<br>Vacant lot, not sure of ownership, maybe drive by and look, or find on a map of area</div>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-95.410339,29.698305,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Motel 6</name>
+    <Snippet>Lots of plants, go by and see if can use it...</Snippet>
+    <description><![CDATA[<div dir="ltr">Lots of plants, go by and see if can use it...</div>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-95.646973,29.783226,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sims Bayou</name>
+    <Snippet>Lots of plants on the North side of the bayou, on the West side of I-45. </Snippet>
+    <description><![CDATA[<div dir="ltr">Lots of plants on the North side of the bayou, on the West side of I-45. <br><br></div>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>-95.274384,29.679701,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mine Field</name>
+    <Snippet>Helianthus annuus texanusOne of my main sites</Snippet>
+    <description><![CDATA[<div dir="ltr">Helianthus annuus texanus<br><br>One of my main sites</div>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-97.620667,30.228931,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rosebud</name>
+    <Snippet>Helianthus annuus Next to huge sunflower crop, adjacent to it...</Snippet>
+    <description><![CDATA[<div dir="ltr">Helianthus annuus <br><br>Next to huge sunflower crop, adjacent to it...</div>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>-97.009445,31.072969,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cielo Grande</name>
+    <Snippet>One of my main sites</Snippet>
+    <description><![CDATA[<div dir="ltr">One of my main sites</div>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-97.099205,31.050802,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ring 1</name>
+    <Snippet>Crop sunflower site and wild site</Snippet>
+    <description><![CDATA[<div dir="ltr">Crop sunflower site and wild site</div>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-97.644424,28.130583,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ring 2</name>
+    <Snippet>Crop sunflower site and wild site</Snippet>
+    <description><![CDATA[<div dir="ltr">Crop sunflower site and wild site</div>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>-97.604774,28.064104,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Muleshoe NWR</name>
+    <Snippet>Wild H. annuus site</Snippet>
+    <description><![CDATA[<div dir="ltr">Wild H. annuus site</div>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>-102.737015,33.962654,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dewey</name>
+    <Snippet>wild-crop site</Snippet>
+    <description><![CDATA[<div dir="ltr">wild-crop site</div>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-101.885391,32.893696,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Askew</name>
+    <Snippet>wild-crop site</Snippet>
+    <description><![CDATA[<div dir="ltr">wild-crop site</div>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-102.139893,33.268257,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Blanco 8</name>
+    <description><![CDATA[<div dir="ltr">Potential Ecolab property to work on</div>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-98.442909,30.323360,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Comal 3</name>
+    <description><![CDATA[<div dir="ltr">Potential Ecolab property to work on</div>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-98.293991,30.008017,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
