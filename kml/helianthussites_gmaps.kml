@@ -158,7 +158,7 @@
     </IconStyle>
   </Style>
   <Placemark>
-    <name>Steven Beakley</name>
+    <name>site 1</name>
     <description><![CDATA[<div dir="ltr">Bardwell, TX</div>]]></description>
     <styleUrl>#style11</styleUrl>
     <Point>
@@ -166,7 +166,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Kevin Lundgren</name>
+    <name>site 2</name>
     <description><![CDATA[<div dir="ltr">contact: Ethan, 971-207-6240</div>]]></description>
     <styleUrl>#style2</styleUrl>
     <Point>
@@ -174,7 +174,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Jo Merek</name>
+    <name>site 3</name>
     <description><![CDATA[<div dir="ltr">approximate location</div>]]></description>
     <styleUrl>#style3</styleUrl>
     <Point>
@@ -182,7 +182,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Lesley Merek</name>
+    <name>site 4</name>
     <description><![CDATA[<div dir="ltr">total guess location</div>]]></description>
     <styleUrl>#style7</styleUrl>
     <Point>
@@ -190,7 +190,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Jon Jaahns</name>
+    <name>site 5</name>
     <description><![CDATA[<div dir="ltr">total guess location</div>]]></description>
     <styleUrl>#style20</styleUrl>
     <Point>
@@ -198,7 +198,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Beall</name>
+    <name>site 6</name>
     <Snippet>Helianthus annuus texanusJon Beall (Travis 6) 17312 Littig Rd.jonbeall1@onr.com </Snippet>
     <description><![CDATA[<div dir="ltr">Helianthus annuus texanus<br><br>Jon Beall (Travis 6) <br>17312 Littig Rd.<br>jonbeall1@onr.com <br>(512) 632-1760</div>]]></description>
     <styleUrl>#style9</styleUrl>
@@ -313,7 +313,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Dewey</name>
+    <name>site 10</name>
     <Snippet>wild-crop site</Snippet>
     <description><![CDATA[<div dir="ltr">wild-crop site</div>]]></description>
     <styleUrl>#style13</styleUrl>
@@ -322,7 +322,7 @@
     </Point>
   </Placemark>
   <Placemark>
-    <name>Askew</name>
+    <name>site 11</name>
     <Snippet>wild-crop site</Snippet>
     <description><![CDATA[<div dir="ltr">wild-crop site</div>]]></description>
     <styleUrl>#style14</styleUrl>
