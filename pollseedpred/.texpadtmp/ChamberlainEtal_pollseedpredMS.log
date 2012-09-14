@@ -1,0 +1,236 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  3 MAR 2012 01:59
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**ChamberlainEtal_pollseedpredMS.tex
+(./ChamberlainEtal_pollseedpredMS.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./natbib.sty
+Package: natbib 1998/07/14 6.8c (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 467.
+\c@NAT@ctr=\count87
+)
+(./textcomp.sty)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count88
+\output=\toks14
+\linenoprevgraf=\count89
+\linenumbersep=\dimen103
+\linenumberwidth=\dimen104
+\c@linenumber=\count90
+\c@pagewiselinenumber=\count91
+\c@LN@truepage=\count92
+\c@internallinenumber=\count93
+\c@internallinenumbers=\count94
+\quotelinenumbersep=\dimen105
+\bframerule=\dimen106
+\bframesep=\dimen107
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/Users/ScottMac/github/SChamberlain/work/pollseedpred/.texpadtmp/ChamberlainEt
+al_pollseedpredMS.aux)
+\openout1 = `ChamberlainEtal_pollseedpredMS.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 11.
+ [1
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `McKinney2006' on page 2 undefined on input li
+ne 31.
+
+
+Package natbib Warning: Citation `Dormann2007' on page 2 undefined on input lin
+e 31.
+
+
+Package natbib Warning: Citation `Foley2005' on page 2 undefined on input line 
+31.
+
+
+Package natbib Warning: Citation `Rand2006' on page 2 undefined on input line 3
+3.
+
+
+Package natbib Warning: Citation `Polis1997' on page 2 undefined on input line 
+33.
+
+
+Package natbib Warning: Citation `Strauss2004' on page 2 undefined on input lin
+e 35.
+
+
+Package natbib Warning: Citation `Cariveau2004' on page 2 undefined on input li
+ne 35.
+
+
+Package natbib Warning: Citation `Irwin2003' on page 2 undefined on input line 
+35.
+
+
+Package natbib Warning: Citation `Siepielski2010' on page 2 undefined on input 
+line 35.
+
+[2]
+
+Package natbib Warning: Citation `Burke2002' on page 3 undefined on input line 
+41.
+
+
+Package natbib Warning: Citation `Whitton1997' on page 3 undefined on input lin
+e 41.
+
+
+Package natbib Warning: Citation `Linder1998' on page 3 undefined on input line
+ 41.
+
+
+Package natbib Warning: Citation `Linder1998' on page 3 undefined on input line
+ 41.
+
+
+Package natbib Warning: Citation `Greenleaf2006' on page 3 undefined on input l
+ine 43.
+
+
+Package natbib Warning: Citation `Whitney2006' on page 3 undefined on input lin
+e 43.
+
+
+Package natbib Warning: Citation `Whitney2006' on page 3 undefined on input lin
+e 43.
+
+[3]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 46.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 46.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 46.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 46.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 46.
+
+
+Package natbib Warning: Citation `Westphal2008' on page 4 undefined on input li
+ne 55.
+
+
+Package natbib Warning: Citation `Michener2000' on page 4 undefined on input li
+ne 55.
+
+
+Package natbib Warning: Citation `Michener1994' on page 4 undefined on input li
+ne 55.
+
+
+Package natbib Warning: Citation `Michener2000' on page 4 undefined on input li
+ne 55.
+
+[4]
+
+Package natbib Warning: Citation `Oksanen2010' on page 5 undefined on input lin
+e 65.
+
+
+Package natbib Warning: Citation `Chao1984' on page 5 undefined on input line 6
+5.
+
+
+Package natbib Warning: Citation `Team2008' on page 5 undefined on input line 6
+5.
+
+[5] [6]
+(/Users/ScottMac/github/SChamberlain/work/pollseedpred/.texpadtmp/ChamberlainEt
+al_pollseedpredMS.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+) [7]
+
+Package natbib Warning: There were undefined citations.
+
+[8]
+(/Users/ScottMac/github/SChamberlain/work/pollseedpred/.texpadtmp/ChamberlainEt
+al_pollseedpredMS.aux) ) 
+Here is how much of TeX's memory you used:
+ 1006 strings out of 493633
+ 14626 string characters out of 3143378
+ 61829 words of memory out of 3000000
+ 4359 multiletter control sequences out of 15000+200000
+ 9455 words of font info for 33 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 23i,6n,22p,1215b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmss8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti12.pfb>
+Output written on /Users/ScottMac/github/SChamberlain/work/pollseedpred/.texpad
+tmp/ChamberlainEtal_pollseedpredMS.pdf (8 pages, 93303 bytes).
+PDF statistics:
+ 59 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
