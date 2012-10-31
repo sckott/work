@@ -1,7 +1,7 @@
 ##### 
 ### Vamosi-Heard project
 ## Just for Scott: sync code files on git repo to dropbox whenever necessary
-# system("cp -r /Users/ScottMac/github/SChamberlain/work/vamosi_heard/ /Users/ScottMac/Dropbox/Vamosi_Heard/code/")
+# system("cp -r ~/github/SChamberlain/work/vamosi_heard/ ~/Dropbox/Vamosi_Heard/code/")
 
 #####
 # load libraries
@@ -10,7 +10,7 @@ library(gdata); library(plyr); library(ggplot2); library(stringr); library(taxiz
 
 #####
 # Read in data, clean
-setwd("/Users/ScottMac/Dropbox/Vamosi_Heard/data")
+setwd("~/Dropbox/Vamosi_Heard/data")
 data_nb <- read.xls("new brunswick fish list.xlsx")[-c(50:51),]
 data_s <- read.xls("sudbury fish list.xlsx", sheet="taxa")
 
@@ -32,78 +32,78 @@ df_towrite <- data.frame(taxon=NA, gene_desc=NA, gi_no=NA, acc_no=NA, length=NA,
 
 # CO1
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_coi.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_coi.txt", row.names=F)
 do <- llply(splist, get_seqs, gene = c("coi", "co1"), 
 	seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_coi.txt")
-fish_coi_seqs_coi_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_coi.txt", header=T)[-1,]
+fish_coi_seqs_coi_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_coi.txt", header=T)[-1,]
 
 # RAG1
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_rag1.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_rag1.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "rag1", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_rag1.txt")
-fish_coi_seqs_rag1_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_rag1.txt", header=T)[-1,]
+fish_coi_seqs_rag1_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_rag1.txt", header=T)[-1,]
 
 # Glyt
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_Glyt.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_Glyt.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "Glyt", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_Glyt.txt")
-fish_coi_seqs_Glyt_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_Glyt.txt", header=T)[-1,]
+fish_coi_seqs_Glyt_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_Glyt.txt", header=T)[-1,]
 fish_coi_seqs_Glyt_df
 
 # myh6
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_myh6.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_myh6.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "myh6", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_myh6.txt")
-fish_coi_seqs_myh6_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_myh6.txt", header=T)[-1,]
+fish_coi_seqs_myh6_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_myh6.txt", header=T)[-1,]
 
 # plagl2
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_plagl2.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_plagl2.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "plagl2", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_plagl2.txt")
-fish_coi_seqs_plagl2_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_plagl2.txt", header=T)[-1,]
+fish_coi_seqs_plagl2_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_plagl2.txt", header=T)[-1,]
 
 # Ptr
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_Ptr.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_Ptr.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "Ptr", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_Ptr.txt")
-fish_coi_seqs_Ptr_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_Ptr.txt", header=T)[-1,]
+fish_coi_seqs_Ptr_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_Ptr.txt", header=T)[-1,]
 
 # SH3PX3
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_SH3PX3.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_SH3PX3.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "SH3PX3", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_SH3PX3.txt")
-fish_coi_seqs_SH3PX3_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_SH3PX3.txt", header=T)[-1,]
+fish_coi_seqs_SH3PX3_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_SH3PX3.txt", header=T)[-1,]
 
 # sreb2
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_sreb2.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_sreb2.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "sreb2", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_sreb2.txt")
-fish_coi_seqs_sreb2_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_sreb2.txt", header=T)[-1,]
+fish_coi_seqs_sreb2_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_sreb2.txt", header=T)[-1,]
 
 # tbr1
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_tbr1.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_tbr1.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "tbr1", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_tbr1.txt")
-fish_coi_seqs_tbr1_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_tbr1.txt", header=T)[-1,]
+fish_coi_seqs_tbr1_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_tbr1.txt", header=T)[-1,]
 
 # zic1
 registerDoMC(cores=4)
-write.table(df_towrite, "/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_zic1.txt", row.names=F)
+write.table(df_towrite, "~/Dropbox/Vamosi_Heard/data/fishseqsout_zic1.txt", row.names=F)
 dp <- llply(splist, get_seqs, gene = "zic1", 
 						seqrange = "1:3000", getrelated=T, writetodf=T, .parallel=T, filetowriteto="fishseqsout_zic1.txt")
-fish_coi_seqs_zic1_df <- read.table("/Users/ScottMac/Dropbox/Vamosi_Heard/data/fishseqsout_zic1.txt", header=T)[-1,]
+fish_coi_seqs_zic1_df <- read.table("~/Dropbox/Vamosi_Heard/data/fishseqsout_zic1.txt", header=T)[-1,]
 
 #####
 # Make summary table of genes available for each species
-setwd("/Users/ScottMac/Dropbox/Vamosi_Heard/data/")
+setwd("~/Dropbox/Vamosi_Heard/data/")
 prepdf <- function(x, column) {
 	x_ <- read.table(x, header=T)[-1,c("taxon",column)]
 	x__ <- na.omit(x_)
@@ -117,7 +117,7 @@ filenames <- c("fishseqsout_zic1.txt","fishseqsout_tbr1.txt","fishseqsout_sreb2.
 dfs <- lapply(filenames, prepdf, column="length")
 summary_length <- merge_recurse(dfs, by="taxon")
 summary_length <- sort_df(summary_length, "taxon")
-write.csv(summary_length, "summary_length.csv", row.names=F)
+write.csv(summary_length, "summarydf.csv", row.names=F)
 
 dfs <- lapply(filenames, prepdf, column="spused")
 summary_names <- merge_recurse(dfs, by="taxon")
