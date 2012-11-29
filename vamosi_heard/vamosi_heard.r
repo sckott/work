@@ -247,17 +247,71 @@ evolmods_results <- llply(alignments, fitevolmods_safe, .progress="text")
 names(evolmods_results) <- c("sreb2", "SH3PX3", "Ptr", "tbr1", "zic1")
 evolmods_results_2 <- evolmods_results[!sapply(evolmods_results, is.null)]
 evolmods_results_df <- ldply(evolmods_results_2, function(x) as.data.frame(x))
-write.csv(evolmods_results_df, "~/Dropbox/Vamosi_Heard/data/evolmods_results_df_new.csv")
+write.csv(evolmods_results_df, "~/Dropbox/Vamosi_Heard/data/evolmods_results_df_new_new.csv")
 
 #####
 # Concatenate sequence alignments into one alignment, noting where each partition starts/stops
-# using c.genes from phyloch
-concatalign <- cbind.DNAbin(alignments[[1]], alignments[[2]], alignments[[3]], alignments[[4]],
-											 alignments[[5]], alignments[[6]], alignments[[7]], alignments[[8]],
-											 alignments[[9]], alignments[[10]], alignments[[11]], alignments[[12]],
-											 alignments[[13]], alignments[[14]], alignments[[15]],
-											check.names=T)
-write.dna(concatalign, "~/Dropbox/Vamosi_Heard/data/asdf.fas", format="fasta")
+# genenames <- c("zic1","tbr1","sreb2","SH3PX3","Ptr","coi","rag1","plagl2","myh6",
+# 							 "Glyt","tweightS","sixteenS","twelveS","NADH5","cytb")
+genenames <- c("coi","rag1","plagl2","Glyt","NADH5","myh6","zic1", "Ptr", "sreb2", "SH3PX3", "tbr1")
+
+readaligns <- function(genename) {
+	ttt <- read.table(paste0("~/Dropbox/Vamosi_Heard/data/alignments/", genename, ".aln.phy"), skip=1, fill=T)
+	names(ttt) <- c("species", "seq")
+	ttt
+}
+all <- llply(genenames, readaligns, .progress="text")
+
+out <- merge(all[[1]], all[[2]], by="species", all.x=T)
+names(out)[2:3] <- c("coi","rag1")
+out <- merge(out, all[[3]], by="species", all.x=T)
+names(out)[4] <- "plagl2"
+out <- merge(out, all[[4]], by="species", all.x=T)
+names(out)[5] <- "Glyt"
+out <- merge(out, all[[5]], by="species", all.x=T)
+names(out)[6] <- "NADH5"
+out <- merge(out, all[[6]], by="species", all.x=T)
+names(out)[7] <- "myh6"
+out <- merge(out, all[[7]], by="species", all.x=T)
+names(out)[8] <- "zic1"
+out <- merge(out, all[[8]], by="species", all.x=T)
+names(out)[9] <- "Ptr"
+out <- merge(out, all[[9]], by="species", all.x=T)
+names(out)[10] <- "sreb2"
+out <- merge(out, all[[10]], by="species", all.x=T)
+names(out)[11] <- "SH3PX3"
+out <- merge(out, all[[11]], by="species", all.x=T)
+names(out)[12] <- "tbr1"
+str(out)
+head(out)
+
+rep_ <- apply(out[3:12], 2, function(x) max(nchar(as.character(x))))
+# alllengths <- apply(out[2:7], 2, function(x) max(nchar(as.character(x))))
+# write.csv(data.frame(gene = names(alllengths), length=alllengths, row.names=NULL), "~/dat.csv")
+coilength <- max(nchar(as.character(out[,2])))
+doit <- function(x) {
+	if(is.na(x[,3])) { temp <- paste(rep("-", rep_[[names(x)[3]]]),collapse="") } else { temp <- as.character(x[,3]) }
+	if(is.na(x[,4])) { temp1 <- paste(rep("-", rep_[[names(x)[4]]]),collapse="") } else { temp1 <- as.character(x[,4]) }
+	if(is.na(x[,5])) { temp2 <- paste(rep("-", rep_[[names(x)[5]]]),collapse="") } else { temp2 <- as.character(x[,5]) }
+	if(is.na(x[,6])) { temp3 <- paste(rep("-", rep_[[names(x)[6]]]),collapse="") } else { temp3 <- as.character(x[,6]) }
+	if(is.na(x[,7])) { temp4 <- paste(rep("-", rep_[[names(x)[7]]]),collapse="") } else { temp4 <- as.character(x[,7]) }
+	if(is.na(x[,8])) { temp5 <- paste(rep("-", rep_[[names(x)[8]]]),collapse="") } else { temp5 <- as.character(x[,8]) }
+	if(is.na(x[,9])) { temp6 <- paste(rep("-", rep_[[names(x)[9]]]),collapse="") } else { temp6 <- as.character(x[,9]) }
+	if(is.na(x[,10])) { temp7 <- paste(rep("-", rep_[[names(x)[10]]]),collapse="") } else { temp7 <- as.character(x[,10]) }
+	if(is.na(x[,11])) { temp8 <- paste(rep("-", rep_[[names(x)[11]]]),collapse="") } else { temp8 <- as.character(x[,11]) }
+	if(is.na(x[,12])) { temp9 <- paste(rep("-", rep_[[names(x)[12]]]),collapse="") } else { temp9 <- as.character(x[,12]) }
+	itt <- paste0(x[,2], temp, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9)
+	names(itt) <- x$species
+	itt
+}
+outout <- lapply(split(out, out$species), doit)
+outoutdf <- ldply(outout)
+# sapply(outoutdf[,2], function(x) nchar(as.character(x)), USE.NAMES=F)
+# write.csv(outoutdf, "final_aligned_concat.csv")
+justseqs <- outoutdf[,2]
+names(justseqs) <- outoutdf[,1]
+write_fasta(justseqs, "~/final_aligned_concat_new.fas")
+
 
 #####
 # Write to file to use in MrBayes (Bayesian) and RaxML (ML) methods
