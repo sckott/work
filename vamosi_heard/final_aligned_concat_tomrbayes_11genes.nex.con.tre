@@ -1,0 +1,152 @@
+#NEXUS
+
+[ID: 4988209021]
+begin taxa;
+	dimensions ntax=66;
+	taxlabels
+		Acipenser_brevirostrum
+		Acipenser_oxyrinchus
+		Alosa_aestivalis
+		Alosa_pseudoharengus
+		Alosa_sapidissima
+		Ambloplites_rupestris
+		Ameiurus_nebulosus
+		Anguilla_rostrata
+		Apeltes_quadracus
+		Carassius_auratus
+		Catostomus_catostomus
+		Catostomus_commersonii
+		Chrosomus_neogaeus
+		Coregonus_artedi
+		Coregonus_clupeaformis
+		Cottus_bairdii
+		Cottus_cognatus
+		Cottus_ricei
+		Couesius_plumbeus
+		Culaea_inconstans
+		Esox_masquinongy
+		Esox_niger
+		Etheostoma_exile
+		Etheostoma_nigrum
+		Fundulus_diaphanus
+		Fundulus_heteroclitus
+		Gasterosteus_aculeatus
+		Gasterosteus_wheatlandi
+		Lepomis_auritus
+		Lepomis_gibbosus
+		Lepomis_macrochirus
+		Lota_lota
+		Luxilus_cornutus
+		Margariscus_margarita
+		Microgadus_tomcod
+		Micropterus_dolomieu
+		Micropterus_salmoides
+		Morone_americana
+		Morone_saxatilis
+		Notemigonus_crysoleucas
+		Notropis_atherinoides
+		Notropis_chrosomus
+		Notropis_heterolepis
+		Notropis_hudsonius
+		Notropis_leuciodus
+		Oncorhynchus_mykiss
+		Perca_flavescens
+		Percina_caprodes
+		Percopsis_omiscomaycus
+		Petromyzon_marinus
+		Phoxinus_eos
+		Pimephales_notatus
+		Pimephales_promelas
+		Prosopium_cylindraceum
+		Pungitius_pungitius
+		Rhinichthys_atratulus
+		Salmo_salar
+		Salmo_trutta
+		Salvelinus_alpinus
+		Salvelinus_fontinalis
+		Salvelinus_namaycush
+		Sander_vitreus
+		Scyliorhinus_canicula
+		Semotilus_atromaculatus
+		Semotilus_corporalis
+		Umbra_limi
+		;
+end;
+begin trees;
+	translate
+		1	Acipenser_brevirostrum,
+		2	Acipenser_oxyrinchus,
+		3	Alosa_aestivalis,
+		4	Alosa_pseudoharengus,
+		5	Alosa_sapidissima,
+		6	Ambloplites_rupestris,
+		7	Ameiurus_nebulosus,
+		8	Anguilla_rostrata,
+		9	Apeltes_quadracus,
+		10	Carassius_auratus,
+		11	Catostomus_catostomus,
+		12	Catostomus_commersonii,
+		13	Chrosomus_neogaeus,
+		14	Coregonus_artedi,
+		15	Coregonus_clupeaformis,
+		16	Cottus_bairdii,
+		17	Cottus_cognatus,
+		18	Cottus_ricei,
+		19	Couesius_plumbeus,
+		20	Culaea_inconstans,
+		21	Esox_masquinongy,
+		22	Esox_niger,
+		23	Etheostoma_exile,
+		24	Etheostoma_nigrum,
+		25	Fundulus_diaphanus,
+		26	Fundulus_heteroclitus,
+		27	Gasterosteus_aculeatus,
+		28	Gasterosteus_wheatlandi,
+		29	Lepomis_auritus,
+		30	Lepomis_gibbosus,
+		31	Lepomis_macrochirus,
+		32	Lota_lota,
+		33	Luxilus_cornutus,
+		34	Margariscus_margarita,
+		35	Microgadus_tomcod,
+		36	Micropterus_dolomieu,
+		37	Micropterus_salmoides,
+		38	Morone_americana,
+		39	Morone_saxatilis,
+		40	Notemigonus_crysoleucas,
+		41	Notropis_atherinoides,
+		42	Notropis_chrosomus,
+		43	Notropis_heterolepis,
+		44	Notropis_hudsonius,
+		45	Notropis_leuciodus,
+		46	Oncorhynchus_mykiss,
+		47	Perca_flavescens,
+		48	Percina_caprodes,
+		49	Percopsis_omiscomaycus,
+		50	Petromyzon_marinus,
+		51	Phoxinus_eos,
+		52	Pimephales_notatus,
+		53	Pimephales_promelas,
+		54	Prosopium_cylindraceum,
+		55	Pungitius_pungitius,
+		56	Rhinichthys_atratulus,
+		57	Salmo_salar,
+		58	Salmo_trutta,
+		59	Salvelinus_alpinus,
+		60	Salvelinus_fontinalis,
+		61	Salvelinus_namaycush,
+		62	Sander_vitreus,
+		63	Scyliorhinus_canicula,
+		64	Semotilus_atromaculatus,
+		65	Semotilus_corporalis,
+		66	Umbra_limi
+		;
+   [Note: This tree contains information on the topology, 
+          branch lengths (if present), and the probability
+          of the partition indicated by the branch.]
+   tree con_50_majrule = (63:4.764495309778388e-02,1:4.327766292249587e-02,2:3.825728454316057e-02,5:3.825728454316057e-02,6:3.825728454316057e-02,8:3.897609439767728e-02,11:3.825728454316057e-02,12:3.825728454316057e-02,13:3.825728454316057e-02,17:3.910257126769506e-02,21:3.825728454316057e-02,22:4.906986026540902e-02,26:3.825728454316057e-02,27:3.825728454316057e-02,28:3.825728454316057e-02,31:3.529278551625461e-02,36:3.825728454316057e-02,37:3.825728454316057e-02,38:5.153396526593583e-02,40:3.825728454316057e-02,41:3.874074009289969e-02,42:3.690139787834255e-02,43:3.690139787834255e-02,45:3.825728454316057e-02,48:3.452533197207060e-02,49:3.825728454316057e-02,50:3.825728454316057e-02,51:3.838945596144586e-02,52:4.327766292249587e-02,53:3.937681514963115e-02,54:3.825728454316057e-02,57:3.825728454316057e-02,60:3.825728454316057e-02,62:3.825728454316057e-02,64:3.825728454316057e-02,(32:3.919234543417336e-02,35:3.870201819245782e-02)0.833:3.871135894371280e-02,(23:3.825728454316057e-02,24:4.474321123789592e-02)0.667:6.494531728859636e-02,(4:3.825728454316057e-02,(15:3.825728454316057e-02,(59:3.387456210852898e-02,61:3.991129754293900e-02)0.667:3.920883563372148e-02)0.500:3.825728454316057e-02)0.500:3.825728454316057e-02,(29:3.806440617862053e-02,30:3.879870147631748e-02)0.500:3.822714549647033e-02,(25:3.825728454316057e-02,33:3.825728454316057e-02)0.500:3.825728454316057e-02,(16:3.825728454316057e-02,18:3.770037024517276e-02)0.500:3.782800558071715e-02,(9:3.825728454316057e-02,55:3.825728454316057e-02)0.500:2.765674939058796e-02,(34:3.825728454316057e-02,46:3.825728454316057e-02)0.500:3.962777478804137e-02,(3:3.825728454316057e-02,65:3.825728454316057e-02)0.500:5.159093783413722e-02,(7:3.972770876918989e-02,14:5.408999971875352e-02)0.500:1.636445630917885e-02,((44:3.825728454316057e-02,58:3.825728454316057e-02)0.500:4.044603707117596e-02,47:3.825728454316057e-02)0.500:1.665230434011761e-02,(20:3.825728454316057e-02,(39:3.825728454316057e-02,56:3.825728454316057e-02)0.500:5.939285521966055e-02)0.500:3.787542125119278e-02,(10:3.837680481879593e-02,(19:3.690139787834255e-02,66:6.726636083885898e-02)0.500:3.825728454316057e-02)0.500:3.825728454316057e-02);
+
+   [Note: This tree contains information only on the topology
+          and branch lengths (median of the posterior probability density).]
+   tree con_50_majrule = (63:4.764495309778388e-02,1:4.327766292249587e-02,2:3.825728454316057e-02,5:3.825728454316057e-02,6:3.825728454316057e-02,8:3.897609439767728e-02,11:3.825728454316057e-02,12:3.825728454316057e-02,13:3.825728454316057e-02,17:3.910257126769506e-02,21:3.825728454316057e-02,22:4.906986026540902e-02,26:3.825728454316057e-02,27:3.825728454316057e-02,28:3.825728454316057e-02,31:3.529278551625461e-02,36:3.825728454316057e-02,37:3.825728454316057e-02,38:5.153396526593583e-02,40:3.825728454316057e-02,41:3.874074009289969e-02,42:3.690139787834255e-02,43:3.690139787834255e-02,45:3.825728454316057e-02,48:3.452533197207060e-02,49:3.825728454316057e-02,50:3.825728454316057e-02,51:3.838945596144586e-02,52:4.327766292249587e-02,53:3.937681514963115e-02,54:3.825728454316057e-02,57:3.825728454316057e-02,60:3.825728454316057e-02,62:3.825728454316057e-02,64:3.825728454316057e-02,(32:3.919234543417336e-02,35:3.870201819245782e-02):3.871135894371280e-02,(23:3.825728454316057e-02,24:4.474321123789592e-02):6.494531728859636e-02,(4:3.825728454316057e-02,(15:3.825728454316057e-02,(59:3.387456210852898e-02,61:3.991129754293900e-02):3.920883563372148e-02):3.825728454316057e-02):3.825728454316057e-02,(29:3.806440617862053e-02,30:3.879870147631748e-02):3.822714549647033e-02,(25:3.825728454316057e-02,33:3.825728454316057e-02):3.825728454316057e-02,(16:3.825728454316057e-02,18:3.770037024517276e-02):3.782800558071715e-02,(9:3.825728454316057e-02,55:3.825728454316057e-02):2.765674939058796e-02,(34:3.825728454316057e-02,46:3.825728454316057e-02):3.962777478804137e-02,(3:3.825728454316057e-02,65:3.825728454316057e-02):5.159093783413722e-02,(7:3.972770876918989e-02,14:5.408999971875352e-02):1.636445630917885e-02,((44:3.825728454316057e-02,58:3.825728454316057e-02):4.044603707117596e-02,47:3.825728454316057e-02):1.665230434011761e-02,(20:3.825728454316057e-02,(39:3.825728454316057e-02,56:3.825728454316057e-02):5.939285521966055e-02):3.787542125119278e-02,(10:3.837680481879593e-02,(19:3.690139787834255e-02,66:6.726636083885898e-02):3.825728454316057e-02):3.825728454316057e-02);
+end;

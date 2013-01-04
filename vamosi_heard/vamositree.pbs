@@ -1,0 +1,11 @@
+#!/bin/bash
+#PBS -S /bin/bash
+
+# Script for running serial program, diffuse, on glacier
+
+cd ~/fishtree
+echo "Current working directory is `pwd`"
+
+echo "Starting run at: `date`"
+mb final_aligned_concat_tomrbayes_11genes.nex
+echo "Job finished with exit code $? at: `date`"
