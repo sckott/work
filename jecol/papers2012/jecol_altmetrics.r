@@ -1,19 +1,19 @@
 # Journal of Ecology top 2012 papers - Altmetrics
-dois <- as.character(read.csv("~/github/sac/work/jecol/papers2012/jecol_dois.csv")[,1])
-dois
-
-# trim stuff from DOIs
+# dois <- read.csv("~/github/sac/work/jecol/papers2012/jecol_dois.csv")
+# commented this ^ line because my path is different.
 library(stringr)
-dois <- str_trim(str_replace_all(dois, "DOI: ", ""), "both")
+library(rImpactStory)
+library(rAltmetric)
+library(plyr)
+# read only the first column
+dois <- read.csv('jecol_dois.csv')[,1]
+dois_alt <- str_trim(str_replace_all(dois, "DOI: ", "doi/"), "both")
 
-# Search for altmetrics
-library(rImpactStory); library(rAltmetric); library(plyr)
-
-out <- llply(dois, function(x) altmetrics(doi=x), .progress="text")
-out <- out[!sapply(out, is.null)] # remove NULLs
+# Metrics from rAltmetric
+out <- llply(dois_alt, altmetrics, .progress="text")
+out <- compact(out) # remove NULLs
 outdf <- ldply(out, altmetric_data)
 head(outdf)
-
 # Output results to csv file
 write.csv(outdf, file = "/Users/scottmac2/Mac/JEcol_blog/DOIs/altmetrics_data.csv")
 
