@@ -1,0 +1,2 @@
+[s23:16954] mca: base: component_find: unable to open /usr/local/openmpi-1.4.3/lib64/openmpi/mca_btl_ofud: perhaps a missing symbol, or compiled for a different version of Open MPI? (ignored)
+[s23:16954] mca: base: component_find: unable to open /usr/local/openmpi-1.4.3/lib64/openmpi/mca_btl_openib: perhaps a missing symbol, or compiled for a different version of Open MPI? (ignored)

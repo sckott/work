@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -S /bin/bash
+#PBS -m bea
+#PBS -M myrmecocystus@gmail.com
+#PBS -l walltime=20:00:00
+#PBS -N vamositree4
+
+mb ~/fishtree5/vamosi_constraints_new.nex 
