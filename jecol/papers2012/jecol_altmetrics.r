@@ -1,4 +1,5 @@
 # Journal of Ecology top 2012 papers - Altmetrics
+<<<<<<< HEAD
 source("/Users/scottmac2/Dropbox/CANPOLIN_treeshape_ms/data/simulations/balance_cutoff_values/theme_myblank.r")
 dois <- as.character(read.csv("~/github/sac/work/jecol/papers2012/jecol_dois.csv")[,1])
 dois
@@ -22,7 +23,6 @@ write.csv(outdf, file = "~/github/sac/work/jecol/papers2012/altmetrics_data.csv"
 
 # Plot results
 library(reshape2); library(ggplot2); library(stringr)
-
 outdf <- read.csv("~/github/sac/work/jecol/papers2012/altmetrics_data.csv")
 outdf_limited <- outdf[,c(2,11:13,15,22,23,25)]
 names(outdf_limited)[2:8] <- c("g+","FB","Tw","Feeds","Alt","M","Cite")
