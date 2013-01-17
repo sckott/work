@@ -317,6 +317,13 @@ write_fasta(justseqs, "~/final_aligned_concat_new.fas")
 # Write to file to use in MrBayes (Bayesian) and RaxML (ML) methods
 
 
+######
+library(ape)
+tree <- read.nexus(file="/Users/scottmac2/Downloads/fishtree5/vamosi_constraints_new.nex.con.tre")
+plot(tree[[1]], no.margin=T)
+nodelabels(tree[[1]]$node.label, frame="none", cex=0.6, adj=c(0.8,-0.9), )
+#
+
 #####
 # Run ML tree recontsruction protocol
 
