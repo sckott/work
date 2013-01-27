@@ -1,7 +1,8 @@
 # Journal of Ecology top 2012 papers - Altmetrics
-source("/Users/scottmac2/Dropbox/CANPOLIN_treeshape_ms/data/simulations/balance_cutoff_values/theme_myblank.r")
-dois <- as.character(read.csv("~/github/sac/work/jecol/papers2012/jecol_dois.csv")[,1])
-dois
+# source("/Users/scottmac2/Dropbox/CANPOLIN_treeshape_ms/data/simulations/balance_cutoff_values/theme_myblank.r")
+library(RCurl)
+file1 <- getURL("https://raw.github.com/SChamberlain/work/master/jecol/papers2012/jecol_dois.csv")
+dois <- as.character(read.csv(textConnection(file1))[,1])
 
 # trim stuff from DOIs
 library(stringr)
@@ -18,12 +19,17 @@ outdf <- ldply(out, altmetric_data)
 str(outdf)
 
 # Output results to csv file
-write.csv(outdf, file = "~/github/sac/work/jecol/papers2012/altmetrics_data.csv")
+# write.csv(outdf, file = "~/github/sac/work/jecol/papers2012/altmetrics_data.csv")
 
-# Plot results
-library(reshape2); library(ggplot2); library(stringr); library(reshape)
-outdf <- read.csv("~/github/sac/work/jecol/papers2012/altmetrics_data.csv")
-outdf_limited <- outdf[,c(2,11:13,15,22,23,25,47)]
+# Next we manually added in Web of Science citations for the articles..so read the data.frame from github like...
+file2 <- getURL("https://raw.github.com/SChamberlain/work/master/jecol/papers2012/altmetrics_data.csv")
+metricsdf <- read.csv(textConnection(file2))
+
+# Plot results using heatmap in ggplot2
+library(reshape2); library(ggplot2); library(reshape)
+
+# outdf <- read.csv("~/github/sac/work/jecol/papers2012/altmetrics_data.csv")
+outdf_limited <- metricsdf[,c(2,11:13,15,22,23,25,47)] # pick only certain columns
 names(outdf_limited)[2:9] <- c("g+","FB","Tw","Feeds","Alt","M","CiteUL","WoS")
 outdf_limited$record <- 1:nrow(outdf_limited)
 outdf_limited <- sort_df(outdf_limited, "Alt")
@@ -35,6 +41,7 @@ outdf_limited_m$value[is.na(outdf_limited_m$value)] <- 0
 outdf_limited_m$record <- as.factor(outdf_limited_m$record)
 outdf_limited_m$variable <- factor(outdf_limited_m$variable, levels=c("Alt","M","Tw","WoS","FB","CiteUL","g+","Feeds"))
 str(outdf_limited_m)
+
 theme_myblank <- function(...){
 	ggplot2::theme(
 		panel.grid.major = element_blank(),
@@ -71,5 +78,5 @@ ggplot(outdf_limited_m, aes(variable, reorder(record, Alt2))) +
 		panel.grid.minor = element_blank(),
 		panel.border = element_blank()
 )
-ggsave("~/github/sac/work/jecol/papers2012/toppapers2012_3.png")
+# ggsave("~/github/sac/work/jecol/papers2012/toppapers2012_3.png")
 # dev.off()
