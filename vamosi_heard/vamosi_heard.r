@@ -183,11 +183,11 @@ write.csv(summary_names, "summary_names.csv", row.names=F)
 
 #####
 # Read in sequence files
-setwd("/Users/ScottMac/Dropbox/Vamosi_Heard/data")
+setwd("/Users/scottmac2/Dropbox/Vamosi_Heard/data")
 
 # fxn to read in file, removing first row of NA's, other NA rows, and duplicates
-prepfasta <- function(x){
-	dir <- "/Users/ScottMac/Dropbox/Vamosi_Heard/data/"
+prepfasta <- function(x, dropspp = NULL){
+	dir <- "/Users/scottmac2/Dropbox/Vamosi_Heard/data/sequences_nopetro/"
 	temp <- read.table(paste0(dir, "fishseqsout_", x, ".txt"), header=T)[-1,] # header TRUE, and remove first NA row
 	temp2 <- temp[!sapply(split(temp, as.numeric(row.names(temp))), function(x) all(is.na(x[,-1])) ), ]
 	temp3 <- temp2[,c("spused","sequence")]
@@ -195,7 +195,12 @@ prepfasta <- function(x){
 	out <- ldply(split(temp3, temp3$spused), doit)[,-1]
 	seqs <- as.character(out$sequence)
 	names(seqs) <- out$spused
-	seqs
+	if(is.null(dropspp)){
+		seqs
+	} else
+	{
+		seqs[!seqs == dropspp]	
+	}
 }
 # coi <- prepfasta("coi")
 
@@ -211,21 +216,24 @@ readalign <- function(genename) {
 	system(paste0('"./clustalw2" ', paste0(genename, ".fas"))) # run clustal multiple alignment
 	read.dna(paste0(genename, ".aln"), format="clustal") # read aligned sequences
 }
-# (out <- readalign("zic1"))
+# out <- readalign("sixteenS")
 genenames <- c("zic1","tbr1","sreb2","SH3PX3","Ptr","coi","rag1","plagl2","myh6",
 							 "Glyt","tweightS","sixteenS","twelveS","NADH5","cytb")
 alignments <- llply(genenames, readalign, .progress="text")
 
+#### Then take *.aln files from output of clustal to mesquite and do any needed hand alignments
+#### then save to .phy files
+
 # Or read in if alignments already done
 library(phangorn)
 # setwd("/Applications/clustalw-2.1-macosx/")
-# tt <- c("cytb.aln", "NADH5.aln", "twelveS.aln", "sixteenS.aln", "tweightS.aln", "Glyt.aln",
-# 	"myh6.aln", "plagl2.aln", "rag1.aln", "coi.aln", "Ptr.aln", "SH3PX3.aln", 
-# 	"sreb2.aln", "tbr1.aln", "zic1.aln")
+tt <- c("cytb.aln.phy", "NADH5.aln.phy", "twelveS.aln.phy", "sixteenS.aln.phy", "Glyt.aln.phy",
+	"myh6.aln.phy", "plagl2.aln.phy", "rag1.aln.phy", "coi.aln.phy", "Ptr.aln.phy", "SH3PX3.aln.phy", 
+	"sreb2.aln.phy", "tbr1.aln.phy", "zic1.aln.phy")
 # alignments <- llply(tt, function(x) read.dna(x, format="clustal"))
-setwd("~/Dropbox/Vamosi_Heard/data/alignments/")
+setwd("~/Dropbox/Vamosi_Heard/data/alignments_new2013")
 # tt <- c("myh6.aln.phy", "Glyt.aln.phy", "plagl2.aln.phy", "NADH5.aln.phy", "rag1.aln.phy", "coi.aln.phy")
-tt <- c("sreb2.aln.phy", "SH3PX3.aln.phy", "Ptr.aln.phy", "tbr1.aln.phy", "zic1.aln.phy")
+# tt <- c("sreb2.aln.phy", "SH3PX3.aln.phy", "Ptr.aln.phy", "tbr1.aln.phy", "zic1.aln.phy")
 alignments <- llply(tt, function(x) read.dna(x))
 
 #####
@@ -240,11 +248,11 @@ fitevolmods <- function(x) {
 }
 fitevolmods_safe <- plyr::failwith(NULL, fitevolmods, quiet=T)
 evolmods_results <- llply(alignments, fitevolmods_safe, .progress="text")
-# names(evolmods_results) <- 
-# 	c("cytb", "NADH5", "twelveS", "sixteenS", "tweightS", "Glyt","myh6", "plagl2",
-# 	"rag1", "coi", "Ptr", "SH3PX3", "sreb2", "tbr1", "zic1")
+names(evolmods_results) <- 
+	c("cytb", "NADH5", "twelveS", "sixteenS", "Glyt","myh6", "plagl2",
+	"rag1", "coi", "Ptr", "SH3PX3", "sreb2", "tbr1", "zic1")
 # names(evolmods_results) <- c("myh6", "Glyt", "plagl2", "NADH5", "rag1", "coi")
-names(evolmods_results) <- c("sreb2", "SH3PX3", "Ptr", "tbr1", "zic1")
+# names(evolmods_results) <- c("sreb2", "SH3PX3", "Ptr", "tbr1", "zic1")
 evolmods_results_2 <- evolmods_results[!sapply(evolmods_results, is.null)]
 evolmods_results_df <- ldply(evolmods_results_2, function(x) as.data.frame(x))
 write.csv(evolmods_results_df, "~/Dropbox/Vamosi_Heard/data/evolmods_results_df_new_new.csv")
@@ -252,44 +260,35 @@ write.csv(evolmods_results_df, "~/Dropbox/Vamosi_Heard/data/evolmods_results_df_
 #####
 # Concatenate sequence alignments into one alignment, noting where each partition starts/stops
 # genenames <- c("zic1","tbr1","sreb2","SH3PX3","Ptr","coi","rag1","plagl2","myh6",
-# 							 "Glyt","tweightS","sixteenS","twelveS","NADH5","cytb")
-genenames <- c("coi","rag1","plagl2","Glyt","NADH5","myh6","zic1", "Ptr", "sreb2", "SH3PX3", "tbr1")
+# 							 "Glyt","sixteenS","twelveS","NADH5","cytb")
+genenames <- c("zic1","tbr1","sreb2","SH3PX3","Ptr","coi","rag1","plagl2","myh6",
+							 "Glyt","NADH5","cytb")
+# genenames <- c("coi","rag1","plagl2","Glyt","NADH5","myh6","zic1", "Ptr", "sreb2", "SH3PX3", "tbr1")
 
 readaligns <- function(genename) {
-	ttt <- read.table(paste0("~/Dropbox/Vamosi_Heard/data/alignments/", genename, ".aln.phy"), skip=1, fill=T)
+	ttt <- read.table(paste0("~/Dropbox/Vamosi_Heard/data/alignments_new2013/", genename, ".aln.phy"), skip=1, fill=T)
 	names(ttt) <- c("species", "seq")
 	ttt
 }
 all <- llply(genenames, readaligns, .progress="text")
+names(all) <- genenames
 
-out <- merge(all[[1]], all[[2]], by="species", all.x=T)
-names(out)[2:3] <- c("coi","rag1")
-out <- merge(out, all[[3]], by="species", all.x=T)
-names(out)[4] <- "plagl2"
-out <- merge(out, all[[4]], by="species", all.x=T)
-names(out)[5] <- "Glyt"
-out <- merge(out, all[[5]], by="species", all.x=T)
-names(out)[6] <- "NADH5"
-out <- merge(out, all[[6]], by="species", all.x=T)
-names(out)[7] <- "myh6"
-out <- merge(out, all[[7]], by="species", all.x=T)
-names(out)[8] <- "zic1"
-out <- merge(out, all[[8]], by="species", all.x=T)
-names(out)[9] <- "Ptr"
-out <- merge(out, all[[9]], by="species", all.x=T)
-names(out)[10] <- "sreb2"
-out <- merge(out, all[[10]], by="species", all.x=T)
-names(out)[11] <- "SH3PX3"
-out <- merge(out, all[[11]], by="species", all.x=T)
-names(out)[12] <- "tbr1"
-str(out)
-head(out)
+all2 <- all[names(sort(sapply(all, nrow, USE.NAMES=F), decreasing=T))]
 
-rep_ <- apply(out[3:12], 2, function(x) max(nchar(as.character(x))))
+out <- merge(all2[[1]], all2[[2]], by="species", all.x=T)
+names(out)[2:3] <- names(all2[1:2])
+all3 <- all2[-c(1:2)]
+for(i in 1:length(all3)){
+	out <- merge(out, all3[[i]], by="species", all.x=T)
+	names(out)[i+3] <- names(all3)[i]
+}
+
+rep_ <- apply(out[2:13], 2, function(x) max(nchar(as.character(x))))
 # alllengths <- apply(out[2:7], 2, function(x) max(nchar(as.character(x))))
 # write.csv(data.frame(gene = names(alllengths), length=alllengths, row.names=NULL), "~/dat.csv")
-coilength <- max(nchar(as.character(out[,2])))
+# coilength <- max(nchar(as.character(out[,2])))
 doit <- function(x) {
+	if(is.na(x[,2])) { temp0 <- paste(rep("-", rep_[[names(x)[2]]]),collapse="") } else { temp0 <- as.character(x[,2]) }
 	if(is.na(x[,3])) { temp <- paste(rep("-", rep_[[names(x)[3]]]),collapse="") } else { temp <- as.character(x[,3]) }
 	if(is.na(x[,4])) { temp1 <- paste(rep("-", rep_[[names(x)[4]]]),collapse="") } else { temp1 <- as.character(x[,4]) }
 	if(is.na(x[,5])) { temp2 <- paste(rep("-", rep_[[names(x)[5]]]),collapse="") } else { temp2 <- as.character(x[,5]) }
@@ -300,7 +299,10 @@ doit <- function(x) {
 	if(is.na(x[,10])) { temp7 <- paste(rep("-", rep_[[names(x)[10]]]),collapse="") } else { temp7 <- as.character(x[,10]) }
 	if(is.na(x[,11])) { temp8 <- paste(rep("-", rep_[[names(x)[11]]]),collapse="") } else { temp8 <- as.character(x[,11]) }
 	if(is.na(x[,12])) { temp9 <- paste(rep("-", rep_[[names(x)[12]]]),collapse="") } else { temp9 <- as.character(x[,12]) }
-	itt <- paste0(x[,2], temp, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9)
+	if(is.na(x[,13])) { temp10 <- paste(rep("-", rep_[[names(x)[13]]]),collapse="") } else { temp10 <- as.character(x[,13]) }
+# 	if(is.na(x[,14])) { temp11 <- paste(rep("-", rep_[[names(x)[14]]]),collapse="") } else { temp11 <- as.character(x[,14]) }
+# 	if(is.na(x[,15])) { temp12 <- paste(rep("-", rep_[[names(x)[15]]]),collapse="") } else { temp12 <- as.character(x[,15]) }
+	itt <- paste0(temp0, temp, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8, temp9, temp10)
 	names(itt) <- x$species
 	itt
 }
@@ -310,7 +312,10 @@ outoutdf <- ldply(outout)
 # write.csv(outoutdf, "final_aligned_concat.csv")
 justseqs <- outoutdf[,2]
 names(justseqs) <- outoutdf[,1]
-write_fasta(justseqs, "~/final_aligned_concat_new.fas")
+write_fasta(justseqs, "~/twelve_gene_bayesian.fas")
+write_fasta(justseqs, "~/twelve_gene_ml.phy", format="maxlik")
+# write_fasta(justseqs, "~/final_aligned_concat_bayesian.fas")
+# write_fasta(justseqs, "~/final_aligned_concat_ml.phy", format="maxlik")
 
 
 #####
